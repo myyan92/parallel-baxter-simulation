@@ -1,8 +1,0 @@
-prefix=/home/ros_ws/devel
-
-Name: baxter_sim_examples
-Description: Description of baxter_sim_examples
-Version: 1.2.12
-Cflags: 
-Libs: -L/home/ros_ws/devel/lib 
-Requires: rospy rospack baxter_core_msgs baxter_gazebo baxter_interface baxter_tools baxter_tools gazebo_ros gazebo_msgs

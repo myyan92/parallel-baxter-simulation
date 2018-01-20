@@ -1,8 +1,0 @@
-Type: baxter_core_msgs/EndpointState
-
-Publishers: 
- * /alice/baxter_sim_kinematics_right (http://localhost:37984/)
-
-Subscribers: None
-
-

@@ -1,8 +1,0 @@
-prefix=/home/ros_ws/devel
-
-Name: baxter_gazebo
-Description: Description of baxter_gazebo
-Version: 1.2.12
-Cflags: 
-Libs: -L/home/ros_ws/devel/lib 
-Requires: baxter_core_msgs gazebo_ros_control roscpp controller_manager_msgs

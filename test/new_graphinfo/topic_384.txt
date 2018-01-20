@@ -1,8 +1,0 @@
-Type: baxter_core_msgs/JointCommand
-
-Publishers: None
-
-Subscribers: 
- * /gazebo (http://localhost:46244/)
-
-

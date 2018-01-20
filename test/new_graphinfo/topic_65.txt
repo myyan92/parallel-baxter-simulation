@@ -1,8 +1,0 @@
-Type: theora_image_transport/Packet
-
-Publishers: 
- * /gazebo (http://localhost:46244/)
-
-Subscribers: None
-
-

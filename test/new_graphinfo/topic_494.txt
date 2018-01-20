@@ -1,8 +1,0 @@
-Type: gazebo_msgs/LinkStates
-
-Publishers: 
- * /gazebo (http://localhost:46244/)
-
-Subscribers: None
-
-

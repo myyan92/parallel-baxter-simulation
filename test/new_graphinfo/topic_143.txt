@@ -1,8 +1,0 @@
-Type: sensor_msgs/Range
-
-Publishers: 
- * /alice/baxter_emulator (http://localhost:45389/)
-
-Subscribers: None
-
-

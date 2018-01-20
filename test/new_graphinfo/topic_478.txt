@@ -1,9 +1,0 @@
-Type: sensor_msgs/LaserScan
-
-Publishers: 
- * /gazebo (http://localhost:46244/)
-
-Subscribers: 
- * /bob/baxter_emulator (http://localhost:34795/)
-
-

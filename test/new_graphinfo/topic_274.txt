@@ -1,8 +1,0 @@
-Type: std_msgs/Bool
-
-Publishers: None
-
-Subscribers: 
- * /bob/baxter_emulator (http://localhost:34795/)
-
-

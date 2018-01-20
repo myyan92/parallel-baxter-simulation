@@ -1,8 +1,0 @@
-Type: control_msgs/JointControllerState
-
-Publishers: 
- * /gazebo (http://localhost:46244/)
-
-Subscribers: None
-
-

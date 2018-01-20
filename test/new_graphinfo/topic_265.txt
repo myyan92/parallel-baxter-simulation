@@ -1,9 +1,0 @@
-Type: baxter_core_msgs/DigitalIOState
-
-Publishers: 
- * /bob/baxter_emulator (http://localhost:34795/)
-
-Subscribers: 
- * /bob/baxter_sim_io (http://localhost:37435/)
-
-

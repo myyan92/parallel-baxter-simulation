@@ -1,8 +1,0 @@
-Type: dynamic_reconfigure/ConfigDescription
-
-Publishers: 
- * /gazebo (http://localhost:46244/)
-
-Subscribers: None
-
-

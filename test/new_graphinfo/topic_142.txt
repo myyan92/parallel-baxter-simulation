@@ -1,8 +1,0 @@
-Type: baxter_core_msgs/NavigatorState
-
-Publishers: 
- * /alice/baxter_sim_io (http://localhost:39463/)
-
-Subscribers: None
-
-
