@@ -1,0 +1,8 @@
+Type: std_msgs/UInt32
+
+Publishers: 
+ * /baxter_emulator (http://localhost:36631/)
+
+Subscribers: None
+
+

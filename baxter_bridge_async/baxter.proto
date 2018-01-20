@@ -1,0 +1,58 @@
+syntax = "proto3";
+import "pose.proto";
+
+message Joint {
+  float s0 = 1;
+  float s1 = 2;
+  float e0 = 3;
+  float e1 = 4;
+  float w0 = 5;
+  float w1 = 6;
+  float w2 = 7;
+}
+
+message GripperState {
+  enum GripperS {
+    IDLE = 0;
+    SUCCESS = 1;
+    FAIL = 2;
+  }
+  GripperS state = 1;
+}
+
+message GripperCommand {
+  enum GripperC {
+    STAY = 0;
+    OPEN = 1;
+    CLOSE = 2;
+  }
+  GripperC command = 1;
+}
+
+message Image {
+  int32 height = 1;
+  int32 width = 2;
+  int32 channel = 3;
+  bytes image = 4;
+}
+
+message BaxterCommand {
+  bool has_left = 1;
+  bool has_right = 2;
+  Joint left_joint_command = 3;
+  Joint right_joint_command = 4;
+  GripperCommand left_gripper_command = 5;
+  GripperCommand right_gripper_command = 6;
+}
+
+message BaxterObserve {
+  Joint left_joint_angles = 1;
+  Joint right_joint_angles = 2;
+  GripperState left_gripper_state = 3;
+  GripperState right_gripper_state = 4;
+  Pose left_endpose = 5;
+  Pose right_endpose = 6;
+  Image head_image = 7;
+  Image left_hand_image = 8;
+  Image right_hand_image = 9;
+}

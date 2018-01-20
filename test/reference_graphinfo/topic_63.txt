@@ -1,0 +1,8 @@
+Type: baxter_core_msgs/EndEffectorCommand
+
+Publishers: None
+
+Subscribers: 
+ * /gazebo (http://localhost:42526/)
+
+

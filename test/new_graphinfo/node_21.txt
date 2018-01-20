@@ -1,0 +1,97 @@
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications: 
+ * /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /rosout [rosgraph_msgs/Log]
+
+Services: 
+ * /rosout/set_logger_level
+ * /rosout/get_loggers
+
+
+contacting node http://localhost:37151/ ...
+Pid: 7508
+Connections:
+ * topic: /rosout
+    * to: /alice/baxter_sim_kinematics_left (http://localhost:38079/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /alice/baxter_sim_kinematics_right (http://localhost:37984/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /bob/baxter_sim_kinematics_left (http://localhost:44040/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /alice/baxter_emulator (http://localhost:45389/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /alice/robot_state_publisher (http://localhost:39795/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /bob/baxter_emulator (http://localhost:34795/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /bob/baxter_sim_kinematics_right (http://localhost:44119/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /alice/baxter_sim_io (http://localhost:39463/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /bob/robot_state_publisher (http://localhost:34886/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /bob/baxter_sim_io (http://localhost:37435/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /alice/controller_spawner (http://localhost:38207/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /alice/right_gripper_controller_spawner_stopped (http://localhost:37516/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /alice/controller_spawner_stopped (http://localhost:35075/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /bob/right_gripper_controller_spawner_stopped (http://localhost:44942/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /bob/left_gripper_controller_spawner_stopped (http://localhost:35024/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /bob/controller_spawner (http://localhost:34887/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /alice/left_gripper_controller_spawner_stopped (http://localhost:39232/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /bob/controller_spawner_stopped (http://localhost:46823/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /gazebo_client (http://localhost:39889/)
+    * direction: inbound
+    * transport: TCPROS
+

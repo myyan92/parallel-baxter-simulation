@@ -1,0 +1,956 @@
+--------------------------------------------------------------------------------
+Node [/gazebo]
+Publications: 
+ * /alice/left_joint_velocity_controller/joints/left_w1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_joint_effort_controller/joints/right_e1_controller/command [std_msgs/Float64]
+ * /bob/left_joint_position_controller/joints/left_s0_controller/state [control_msgs/JointControllerState]
+ * /bob/right_joint_position_controller/joints/right_w1_controller/state [control_msgs/JointControllerState]
+ * /alice/right_joint_position_controller/joints/right_e0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/head_position_controller/joints/head_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_joint_velocity_controller/joints/left_e0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/right_joint_position_controller/joints/right_s0_controller/state [control_msgs/JointControllerState]
+ * /alice/head_camera/image/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/head_camera/image/compressed [sensor_msgs/CompressedImage]
+ * /alice/sonar/head_sonar/state [sensor_msgs/PointCloud]
+ * /alice/right_hand_camera/image/compressedDepth/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_gripper_controller/joints/l_gripper_l_finger_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /gazebo/model_states [gazebo_msgs/ModelStates]
+ * /alice/right_joint_effort_controller/joints/right_w0_controller/command [std_msgs/Float64]
+ * /bob/left_joint_velocity_controller/joints/left_e0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_position_controller/joints/left_w1_controller/state [control_msgs/JointControllerState]
+ * /alice/left_joint_position_controller/joints/left_s0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_velocity_controller/joints/right_e0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_joint_effort_controller/joints/left_s1_controller/command [std_msgs/Float64]
+ * /bob/right_gripper_controller/joints/r_gripper_r_finger_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_joint_position_controller/joints/left_w2_controller/state [control_msgs/JointControllerState]
+ * /bob/head_camera/image/compressed [sensor_msgs/CompressedImage]
+ * /alice/left_joint_position_controller/joints/left_e1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_joint_effort_controller/joints/right_w0_controller/command [std_msgs/Float64]
+ * /alice/left_gripper_controller/joints/l_gripper_l_finger_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_position_controller/joints/left_s1_controller/state [control_msgs/JointControllerState]
+ * /alice/left_joint_velocity_controller/joints/left_e0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_hand_camera/image/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/head_camera/image/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_joint_velocity_controller/joints/left_w2_controller/state [control_msgs/JointControllerState]
+ * /bob/left_joint_position_controller/joints/left_s0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_hand_camera/image/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_hand_camera/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_joint_velocity_controller/joints/right_w1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_effort_controller/joints/right_e0_controller/command [std_msgs/Float64]
+ * /bob/left_joint_position_controller/joints/left_e0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_hand_camera/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_hand_camera/image/compressed [sensor_msgs/CompressedImage]
+ * /alice/head_position_controller/joints/head_controller/state [control_msgs/JointControllerState]
+ * /alice/head_camera/image/theora [theora_image_transport/Packet]
+ * /bob/head_position_controller/joints/head_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_joint_effort_controller/joints/left_e1_controller/command [std_msgs/Float64]
+ * /bob/head_camera/image/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_joint_position_controller/joints/right_s0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/head_position_controller/joints/head_controller/state [control_msgs/JointControllerState]
+ * /bob/right_gripper_controller/joints/r_gripper_l_finger_controller/state [control_msgs/JointControllerState]
+ * /bob/sim/laserscan/left_hand_range/state [sensor_msgs/LaserScan]
+ * /alice/right_gripper_controller/joints/r_gripper_r_finger_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_velocity_controller/joints/right_w0_controller/state [control_msgs/JointControllerState]
+ * /alice/right_gripper_controller/joints/r_gripper_l_finger_controller/state [control_msgs/JointControllerState]
+ * /bob/right_joint_effort_controller/joints/right_s1_controller/command [std_msgs/Float64]
+ * /alice/right_joint_velocity_controller/joints/right_s0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_effort_controller/joints/left_w0_controller/command [std_msgs/Float64]
+ * /bob/left_hand_camera/image/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/joint_states [sensor_msgs/JointState]
+ * /alice/left_joint_position_controller/joints/left_s0_controller/state [control_msgs/JointControllerState]
+ * /alice/right_joint_position_controller/joints/right_e1_controller/state [control_msgs/JointControllerState]
+ * /alice/right_hand_camera/image/compressedDepth/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_joint_velocity_controller/joints/right_w2_controller/state [control_msgs/JointControllerState]
+ * /bob/right_joint_velocity_controller/joints/right_w2_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_joint_position_controller/joints/left_w0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/right_hand_camera/image/compressed [sensor_msgs/CompressedImage]
+ * /bob/right_hand_camera/camera_info [sensor_msgs/CameraInfo]
+ * /alice/right_hand_camera/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_velocity_controller/joints/left_e1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_velocity_controller/joints/right_e1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_joint_position_controller/joints/right_e1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/sonar/head_sonar/state [sensor_msgs/PointCloud]
+ * /bob/left_joint_velocity_controller/joints/left_s1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/left_joint_velocity_controller/joints/left_e0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/left_joint_velocity_controller/joints/left_s1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_hand_camera/image/theora [theora_image_transport/Packet]
+ * /bob/left_joint_position_controller/joints/left_e0_controller/state [control_msgs/JointControllerState]
+ * /alice/left_joint_position_controller/joints/left_w1_controller/state [control_msgs/JointControllerState]
+ * /alice/left_joint_position_controller/joints/left_w1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_hand_camera/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_effort_controller/joints/left_s0_controller/command [std_msgs/Float64]
+ * /alice/right_joint_velocity_controller/joints/right_s1_controller/state [control_msgs/JointControllerState]
+ * /alice/left_hand_camera/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_position_controller/joints/left_w1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/left_joint_position_controller/joints/left_w2_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_joint_position_controller/joints/left_e0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_joint_velocity_controller/joints/left_w1_controller/state [control_msgs/JointControllerState]
+ * /alice/head_camera/image [sensor_msgs/Image]
+ * /bob/right_joint_velocity_controller/joints/right_e0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/left_joint_velocity_controller/joints/left_w2_controller/state [control_msgs/JointControllerState]
+ * /alice/left_joint_position_controller/joints/left_e0_controller/state [control_msgs/JointControllerState]
+ * /alice/left_hand_camera/camera_info [sensor_msgs/CameraInfo]
+ * /bob/right_joint_position_controller/joints/right_w0_controller/state [control_msgs/JointControllerState]
+ * /bob/right_joint_position_controller/joints/right_e0_controller/state [control_msgs/JointControllerState]
+ * /alice/right_hand_camera/image/theora [theora_image_transport/Packet]
+ * /alice/head_position_controller/joints/head_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_joint_position_controller/joints/left_s1_controller/state [control_msgs/JointControllerState]
+ * /alice/right_joint_position_controller/joints/right_s1_controller/state [control_msgs/JointControllerState]
+ * /bob/right_joint_velocity_controller/joints/right_w0_controller/state [control_msgs/JointControllerState]
+ * /bob/right_joint_velocity_controller/joints/right_w1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/right_joint_velocity_controller/joints/right_w0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/head_camera/image [sensor_msgs/Image]
+ * /bob/right_joint_effort_controller/joints/right_w1_controller/command [std_msgs/Float64]
+ * /bob/left_gripper_controller/joints/l_gripper_r_finger_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/head_camera/camera_info [sensor_msgs/CameraInfo]
+ * /bob/right_joint_velocity_controller/joints/right_e1_controller/state [control_msgs/JointControllerState]
+ * /bob/right_joint_velocity_controller/joints/right_e1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/head_position_controller/joints/head_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_joint_position_controller/joints/left_e1_controller/state [control_msgs/JointControllerState]
+ * /bob/left_hand_camera/image/compressedDepth/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_position_controller/joints/left_s1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_velocity_controller/joints/left_e0_controller/state [control_msgs/JointControllerState]
+ * /bob/left_hand_camera/image/compressedDepth/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/head_camera/image/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_hand_camera/image/compressedDepth [sensor_msgs/CompressedImage]
+ * /bob/left_joint_position_controller/joints/left_w0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_joint_velocity_controller/joints/right_s0_controller/state [control_msgs/JointControllerState]
+ * /bob/left_joint_position_controller/joints/left_w2_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /gazebo/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_hand_camera/image/compressedDepth [sensor_msgs/CompressedImage]
+ * /alice/head_camera/image/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_joint_position_controller/joints/left_s1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_joint_velocity_controller/joints/right_e0_controller/state [control_msgs/JointControllerState]
+ * /alice/left_joint_effort_controller/joints/left_s0_controller/command [std_msgs/Float64]
+ * /alice/right_joint_position_controller/joints/right_w1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_effort_controller/joints/left_w2_controller/command [std_msgs/Float64]
+ * /bob/right_joint_velocity_controller/joints/right_s1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_hand_camera/image [sensor_msgs/Image]
+ * /bob/sim/laserscan/right_hand_range/state [sensor_msgs/LaserScan]
+ * /alice/sim/laserscan/right_hand_range/state [sensor_msgs/LaserScan]
+ * /alice/right_joint_position_controller/joints/right_w0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/left_joint_position_controller/joints/left_e1_controller/state [control_msgs/JointControllerState]
+ * /bob/right_joint_position_controller/joints/right_w1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_effort_controller/joints/left_s1_controller/command [std_msgs/Float64]
+ * /alice/right_joint_position_controller/joints/right_w1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_gripper_controller/joints/r_gripper_l_finger_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_joint_velocity_controller/joints/right_s0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_velocity_controller/joints/right_s0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_gripper_controller/joints/l_gripper_l_finger_controller/state [control_msgs/JointControllerState]
+ * /bob/left_hand_camera/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_gripper_controller/joints/r_gripper_l_finger_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /rosout [rosgraph_msgs/Log]
+ * /bob/head_camera/image/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/head_camera/image/compressedDepth/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_joint_velocity_controller/joints/right_s0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_joint_velocity_controller/joints/left_e1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_gripper_controller/joints/l_gripper_r_finger_controller/state [control_msgs/JointControllerState]
+ * /bob/left_hand_camera/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_joint_effort_controller/joints/right_e0_controller/command [std_msgs/Float64]
+ * /bob/left_joint_velocity_controller/joints/left_s0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_joint_velocity_controller/joints/left_w2_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/left_gripper_controller/joints/l_gripper_r_finger_controller/state [control_msgs/JointControllerState]
+ * /alice/right_joint_velocity_controller/joints/right_w1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_joint_position_controller/joints/right_e0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_gripper_controller/joints/l_gripper_r_finger_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_position_controller/joints/right_e1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_position_controller/joints/right_w2_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/left_hand_camera/camera_info [sensor_msgs/CameraInfo]
+ * /alice/left_joint_position_controller/joints/left_w0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_position_controller/joints/right_w0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/right_joint_effort_controller/joints/right_w1_controller/command [std_msgs/Float64]
+ * /alice/right_hand_camera/image/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_hand_camera/image/theora [theora_image_transport/Packet]
+ * /gazebo/link_states [gazebo_msgs/LinkStates]
+ * /clock [rosgraph_msgs/Clock]
+ * /bob/head_camera/image/compressedDepth/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_hand_camera/image/theora [theora_image_transport/Packet]
+ * /bob/left_hand_camera/image/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/right_gripper_controller/joints/r_gripper_r_finger_controller/state [control_msgs/JointControllerState]
+ * /alice/left_joint_velocity_controller/joints/left_w0_controller/state [control_msgs/JointControllerState]
+ * /alice/left_hand_camera/image/compressedDepth/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_hand_camera/image [sensor_msgs/Image]
+ * /bob/right_hand_camera/image/compressedDepth [sensor_msgs/CompressedImage]
+ * /bob/head_camera/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/right_joint_position_controller/joints/right_s0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/right_joint_position_controller/joints/right_e1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/right_joint_velocity_controller/joints/right_e1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_joint_effort_controller/joints/right_w2_controller/command [std_msgs/Float64]
+ * /bob/right_joint_position_controller/joints/right_w2_controller/state [control_msgs/JointControllerState]
+ * /bob/right_joint_position_controller/joints/right_s0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/head_camera/camera_info [sensor_msgs/CameraInfo]
+ * /alice/left_joint_effort_controller/joints/left_e0_controller/command [std_msgs/Float64]
+ * /alice/left_joint_velocity_controller/joints/left_s1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_position_controller/joints/right_w1_controller/state [control_msgs/JointControllerState]
+ * /alice/right_joint_position_controller/joints/right_s1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_joint_position_controller/joints/left_s0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_joint_velocity_controller/joints/left_e1_controller/state [control_msgs/JointControllerState]
+ * /alice/right_joint_position_controller/joints/right_e0_controller/state [control_msgs/JointControllerState]
+ * /alice/right_joint_velocity_controller/joints/right_w0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_joint_velocity_controller/joints/left_e0_controller/state [control_msgs/JointControllerState]
+ * /alice/right_joint_velocity_controller/joints/right_s1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/head_camera/image/theora [theora_image_transport/Packet]
+ * /bob/left_joint_position_controller/joints/left_e1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/head_camera/image/compressedDepth [sensor_msgs/CompressedImage]
+ * /bob/right_joint_velocity_controller/joints/right_s1_controller/state [control_msgs/JointControllerState]
+ * /bob/right_hand_camera/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/left_joint_velocity_controller/joints/left_e1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_joint_velocity_controller/joints/left_s0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_joint_velocity_controller/joints/left_w1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_joint_velocity_controller/joints/right_w2_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_velocity_controller/joints/right_e1_controller/state [control_msgs/JointControllerState]
+ * /alice/left_hand_camera/image/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/head_camera/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_joint_position_controller/joints/left_w1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_gripper_controller/joints/r_gripper_r_finger_controller/state [control_msgs/JointControllerState]
+ * /alice/right_hand_camera/camera_info [sensor_msgs/CameraInfo]
+ * /alice/right_hand_camera/image/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_joint_position_controller/joints/right_e1_controller/state [control_msgs/JointControllerState]
+ * /bob/right_hand_camera/image/compressedDepth/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_hand_camera/image/compressed [sensor_msgs/CompressedImage]
+ * /bob/right_joint_position_controller/joints/right_e1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_position_controller/joints/right_w2_controller/state [control_msgs/JointControllerState]
+ * /bob/right_joint_position_controller/joints/right_e0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_position_controller/joints/left_w2_controller/state [control_msgs/JointControllerState]
+ * /bob/right_joint_velocity_controller/joints/right_e1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_joint_velocity_controller/joints/right_e0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_hand_camera/image/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/head_camera/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_joint_velocity_controller/joints/left_s1_controller/state [control_msgs/JointControllerState]
+ * /alice/right_joint_effort_controller/joints/right_s0_controller/command [std_msgs/Float64]
+ * /alice/right_joint_position_controller/joints/right_s1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /gazebo/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_position_controller/joints/left_w0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_joint_velocity_controller/joints/right_w0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/head_camera/image/compressedDepth [sensor_msgs/CompressedImage]
+ * /bob/joint_states [sensor_msgs/JointState]
+ * /bob/left_joint_position_controller/joints/left_e0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_position_controller/joints/right_w2_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_joint_position_controller/joints/right_w1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_joint_velocity_controller/joints/right_w0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_joint_velocity_controller/joints/left_w2_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_effort_controller/joints/left_e0_controller/command [std_msgs/Float64]
+ * /bob/left_joint_position_controller/joints/left_w1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_gripper_controller/joints/l_gripper_r_finger_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/right_gripper_controller/joints/r_gripper_r_finger_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_position_controller/joints/left_w0_controller/state [control_msgs/JointControllerState]
+ * /alice/left_hand_camera/image/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_velocity_controller/joints/left_w1_controller/state [control_msgs/JointControllerState]
+ * /alice/right_hand_camera/image/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_position_controller/joints/left_s1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/left_joint_velocity_controller/joints/left_w2_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_joint_velocity_controller/joints/left_s0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/right_joint_effort_controller/joints/right_s1_controller/command [std_msgs/Float64]
+ * /bob/right_joint_position_controller/joints/right_w0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_effort_controller/joints/left_e1_controller/command [std_msgs/Float64]
+ * /alice/sim/laserscan/left_hand_range/state [sensor_msgs/LaserScan]
+ * /alice/left_joint_position_controller/joints/left_w2_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_velocity_controller/joints/right_e0_controller/state [control_msgs/JointControllerState]
+ * /bob/left_joint_velocity_controller/joints/left_w1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_hand_camera/image/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_velocity_controller/joints/left_w2_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_velocity_controller/joints/left_e1_controller/state [control_msgs/JointControllerState]
+ * /bob/head_camera/image/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_velocity_controller/joints/left_w0_controller/state [control_msgs/JointControllerState]
+ * /bob/left_joint_effort_controller/joints/left_w1_controller/command [std_msgs/Float64]
+ * /bob/right_joint_position_controller/joints/right_w0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_hand_camera/image/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_hand_camera/image/compressedDepth/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_joint_position_controller/joints/right_s1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_velocity_controller/joints/right_s0_controller/state [control_msgs/JointControllerState]
+ * /bob/right_joint_effort_controller/joints/right_s0_controller/command [std_msgs/Float64]
+ * /bob/left_gripper_controller/joints/l_gripper_l_finger_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_joint_position_controller/joints/right_w2_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_velocity_controller/joints/right_w2_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_hand_camera/image/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/left_joint_velocity_controller/joints/left_w0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_hand_camera/image/compressed [sensor_msgs/CompressedImage]
+ * /bob/left_joint_position_controller/joints/left_s0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_joint_effort_controller/joints/left_w0_controller/command [std_msgs/Float64]
+ * /alice/right_joint_velocity_controller/joints/right_w1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/right_hand_camera/image [sensor_msgs/Image]
+ * /bob/left_gripper_controller/joints/l_gripper_l_finger_controller/state [control_msgs/JointControllerState]
+ * /alice/right_joint_velocity_controller/joints/right_w2_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_hand_camera/image/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/left_joint_velocity_controller/joints/left_s0_controller/state [control_msgs/JointControllerState]
+ * /alice/head_camera/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/right_joint_effort_controller/joints/right_w2_controller/command [std_msgs/Float64]
+ * /bob/right_joint_position_controller/joints/right_w2_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_joint_position_controller/joints/right_s1_controller/state [control_msgs/JointControllerState]
+ * /bob/right_joint_position_controller/joints/right_s0_controller/state [control_msgs/JointControllerState]
+ * /alice/right_joint_velocity_controller/joints/right_w1_controller/state [control_msgs/JointControllerState]
+ * /alice/left_joint_velocity_controller/joints/left_s1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_hand_camera/image/compressedDepth/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_velocity_controller/joints/right_w2_controller/state [control_msgs/JointControllerState]
+ * /bob/right_joint_velocity_controller/joints/right_w1_controller/state [control_msgs/JointControllerState]
+ * /alice/left_joint_effort_controller/joints/left_w1_controller/command [std_msgs/Float64]
+ * /alice/head_camera/image/compressedDepth/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_joint_velocity_controller/joints/left_s0_controller/state [control_msgs/JointControllerState]
+ * /alice/right_joint_velocity_controller/joints/right_s1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_velocity_controller/joints/left_w0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_velocity_controller/joints/right_e0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_joint_position_controller/joints/left_e1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/left_hand_camera/image/compressedDepth [sensor_msgs/CompressedImage]
+ * /alice/left_joint_position_controller/joints/left_w0_controller/state [control_msgs/JointControllerState]
+ * /alice/head_camera/image/compressedDepth/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_joint_effort_controller/joints/left_w2_controller/command [std_msgs/Float64]
+ * /alice/right_gripper_controller/joints/r_gripper_l_finger_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_hand_camera/image/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_position_controller/joints/right_e0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_gripper_controller/joints/r_gripper_l_finger_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_joint_velocity_controller/joints/right_s1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/left_joint_velocity_controller/joints/left_w1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_velocity_controller/joints/left_s1_controller/state [control_msgs/JointControllerState]
+ * /alice/left_joint_position_controller/joints/left_e0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_joint_velocity_controller/joints/left_w0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_joint_position_controller/joints/left_s1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/left_joint_position_controller/joints/left_e1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/left_gripper_controller/joints/l_gripper_r_finger_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_joint_velocity_controller/joints/left_w0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /bob/right_joint_position_controller/joints/right_s1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_hand_camera/image [sensor_msgs/Image]
+ * /alice/left_joint_velocity_controller/joints/left_e1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/left_gripper_controller/joints/l_gripper_l_finger_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_position_controller/joints/right_s0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/left_hand_camera/image/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/right_joint_position_controller/joints/right_w0_controller/state [control_msgs/JointControllerState]
+ * /bob/left_joint_velocity_controller/joints/left_s0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/head_camera/image/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/right_joint_effort_controller/joints/right_e1_controller/command [std_msgs/Float64]
+ * /alice/left_joint_position_controller/joints/left_w2_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /bob/right_gripper_controller/joints/r_gripper_r_finger_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+
+Subscriptions: 
+ * /alice/left_joint_velocity_controller/joints/left_s1_controller/command [unknown type]
+ * /alice/left_joint_effort_controller/joints/left_e0_controller/command [std_msgs/Float64]
+ * /bob/right_joint_effort_controller/joints/right_e1_controller/command [std_msgs/Float64]
+ * /bob/left_joint_velocity_controller/joints/left_w1_controller/command [unknown type]
+ * /bob/left_joint_effort_controller/joints/left_e1_controller/command [std_msgs/Float64]
+ * /alice/right_joint_velocity_controller/joints/right_s0_controller/command [unknown type]
+ * /alice/right_joint_velocity_controller/joints/right_w1_controller/command [unknown type]
+ * /alice/left_joint_velocity_controller/joints/left_e1_controller/command [unknown type]
+ * /alice/right_joint_velocity_controller/joints/right_s1_controller/command [unknown type]
+ * /bob/right_joint_effort_controller/joints/right_w2_controller/command [std_msgs/Float64]
+ * /alice/right_joint_velocity_controller/joints/right_e1_controller/command [unknown type]
+ * /alice/right_gripper_controller/joints/r_gripper_r_finger_controller/command [unknown type]
+ * /alice/left_joint_velocity_controller/joints/left_s0_controller/command [unknown type]
+ * /alice/left_joint_effort_controller/joints/left_w2_controller/command [std_msgs/Float64]
+ * /bob/left_joint_velocity_controller/joints/left_e0_controller/command [unknown type]
+ * /bob/right_joint_effort_controller/joints/right_w1_controller/command [std_msgs/Float64]
+ * /bob/right_joint_position_controller/joints/right_e1_controller/command [unknown type]
+ * /bob/right_joint_velocity_controller/joints/right_w2_controller/command [unknown type]
+ * /bob/left_joint_position_controller/joints/left_w1_controller/command [unknown type]
+ * /bob/right_joint_effort_controller/joints/right_s0_controller/command [std_msgs/Float64]
+ * /bob/right_joint_velocity_controller/joints/right_w0_controller/command [unknown type]
+ * /bob/right_joint_velocity_controller/joints/right_s0_controller/command [unknown type]
+ * /bob/end_effector/right_gripper/command [unknown type]
+ * /alice/head_position_controller/joints/head_controller/command [unknown type]
+ * /alice/left_joint_effort_controller/joints/left_w1_controller/command [std_msgs/Float64]
+ * /alice/right_joint_effort_controller/joints/right_w0_controller/command [std_msgs/Float64]
+ * /bob/left_joint_velocity_controller/joints/left_w2_controller/command [unknown type]
+ * /bob/limb/left/joint_command [unknown type]
+ * /alice/left_joint_velocity_controller/joints/left_e0_controller/command [unknown type]
+ * /bob/right_joint_velocity_controller/joints/right_w1_controller/command [unknown type]
+ * /alice/left_joint_effort_controller/joints/left_e1_controller/command [std_msgs/Float64]
+ * /bob/left_joint_position_controller/joints/left_s1_controller/command [unknown type]
+ * /alice/right_joint_velocity_controller/joints/right_w0_controller/command [unknown type]
+ * /alice/right_joint_effort_controller/joints/right_e1_controller/command [std_msgs/Float64]
+ * /alice/left_joint_effort_controller/joints/left_w0_controller/command [std_msgs/Float64]
+ * /alice/limb/left/joint_command [unknown type]
+ * /alice/right_joint_position_controller/joints/right_e1_controller/command [unknown type]
+ * /bob/right_joint_position_controller/joints/right_w2_controller/command [unknown type]
+ * /alice/xdisplay [sensor_msgs/Image]
+ * /alice/left_joint_velocity_controller/joints/left_w1_controller/command [unknown type]
+ * /bob/right_joint_position_controller/joints/right_s1_controller/command [unknown type]
+ * /bob/limb/right/joint_command [unknown type]
+ * /alice/left_joint_position_controller/joints/left_s0_controller/command [unknown type]
+ * /bob/right_joint_effort_controller/joints/right_w0_controller/command [std_msgs/Float64]
+ * /bob/left_gripper_controller/joints/l_gripper_l_finger_controller/command [unknown type]
+ * /alice/right_joint_position_controller/joints/right_s0_controller/command [unknown type]
+ * /alice/left_joint_effort_controller/joints/left_s0_controller/command [std_msgs/Float64]
+ * /bob/left_joint_velocity_controller/joints/left_s0_controller/command [unknown type]
+ * /bob/left_joint_effort_controller/joints/left_w2_controller/command [std_msgs/Float64]
+ * /alice/right_joint_effort_controller/joints/right_w2_controller/command [std_msgs/Float64]
+ * /alice/left_joint_position_controller/joints/left_e0_controller/command [unknown type]
+ * /alice/right_joint_position_controller/joints/right_w2_controller/command [unknown type]
+ * /bob/left_joint_effort_controller/joints/left_w1_controller/command [std_msgs/Float64]
+ * /alice/right_joint_effort_controller/joints/right_e0_controller/command [std_msgs/Float64]
+ * /alice/left_gripper_controller/joints/l_gripper_l_finger_controller/command [unknown type]
+ * /bob/left_gripper_controller/joints/l_gripper_r_finger_controller/command [unknown type]
+ * /bob/xdisplay [sensor_msgs/Image]
+ * /bob/right_gripper_controller/joints/r_gripper_r_finger_controller/command [unknown type]
+ * /bob/left_joint_effort_controller/joints/left_s1_controller/command [std_msgs/Float64]
+ * /alice/right_joint_velocity_controller/joints/right_e0_controller/command [unknown type]
+ * /alice/right_gripper_controller/joints/r_gripper_l_finger_controller/command [unknown type]
+ * /alice/right_joint_velocity_controller/joints/right_w2_controller/command [unknown type]
+ * /bob/left_joint_velocity_controller/joints/left_s1_controller/command [unknown type]
+ * /bob/right_joint_position_controller/joints/right_e0_controller/command [unknown type]
+ * /bob/right_joint_velocity_controller/joints/right_e0_controller/command [unknown type]
+ * /alice/limb/right/joint_command [unknown type]
+ * /bob/left_joint_position_controller/joints/left_e0_controller/command [unknown type]
+ * /alice/left_joint_position_controller/joints/left_w1_controller/command [unknown type]
+ * /bob/right_joint_position_controller/joints/right_s0_controller/command [unknown type]
+ * /alice/end_effector/right_gripper/command [unknown type]
+ * /alice/right_joint_effort_controller/joints/right_w1_controller/command [std_msgs/Float64]
+ * /bob/right_joint_effort_controller/joints/right_s1_controller/command [std_msgs/Float64]
+ * /bob/left_joint_position_controller/joints/left_e1_controller/command [unknown type]
+ * /bob/left_joint_effort_controller/joints/left_w0_controller/command [std_msgs/Float64]
+ * /bob/right_gripper_controller/joints/r_gripper_l_finger_controller/command [unknown type]
+ * /bob/left_joint_velocity_controller/joints/left_e1_controller/command [unknown type]
+ * /alice/left_joint_position_controller/joints/left_e1_controller/command [unknown type]
+ * /gazebo/set_model_state [unknown type]
+ * /bob/state [baxter_core_msgs/AssemblyState]
+ * /alice/left_gripper_controller/joints/l_gripper_r_finger_controller/command [unknown type]
+ * /bob/right_joint_velocity_controller/joints/right_e1_controller/command [unknown type]
+ * /alice/left_joint_velocity_controller/joints/left_w0_controller/command [unknown type]
+ * /bob/left_joint_velocity_controller/joints/left_w0_controller/command [unknown type]
+ * /bob/head/command_head_pan [unknown type]
+ * /bob/left_joint_position_controller/joints/left_w0_controller/command [unknown type]
+ * /gazebo/set_link_state [unknown type]
+ * /bob/right_joint_effort_controller/joints/right_e0_controller/command [std_msgs/Float64]
+ * /alice/left_joint_effort_controller/joints/left_s1_controller/command [std_msgs/Float64]
+ * /bob/head_position_controller/joints/head_controller/command [unknown type]
+ * /alice/right_joint_position_controller/joints/right_e0_controller/command [unknown type]
+ * /clock [rosgraph_msgs/Clock]
+ * /alice/end_effector/left_gripper/command [unknown type]
+ * /bob/right_joint_position_controller/joints/right_w1_controller/command [unknown type]
+ * /alice/left_joint_velocity_controller/joints/left_w2_controller/command [unknown type]
+ * /bob/left_joint_effort_controller/joints/left_e0_controller/command [std_msgs/Float64]
+ * /alice/head/command_head_pan [unknown type]
+ * /bob/right_joint_position_controller/joints/right_w0_controller/command [unknown type]
+ * /bob/end_effector/left_gripper/command [unknown type]
+ * /alice/state [baxter_core_msgs/AssemblyState]
+ * /bob/left_joint_position_controller/joints/left_w2_controller/command [unknown type]
+ * /bob/right_joint_velocity_controller/joints/right_s1_controller/command [unknown type]
+ * /bob/left_joint_effort_controller/joints/left_s0_controller/command [std_msgs/Float64]
+ * /alice/right_joint_position_controller/joints/right_s1_controller/command [unknown type]
+ * /bob/left_joint_position_controller/joints/left_s0_controller/command [unknown type]
+ * /alice/left_joint_position_controller/joints/left_w2_controller/command [unknown type]
+ * /alice/right_joint_position_controller/joints/right_w0_controller/command [unknown type]
+ * /alice/left_joint_position_controller/joints/left_s1_controller/command [unknown type]
+ * /alice/left_joint_position_controller/joints/left_w0_controller/command [unknown type]
+ * /alice/right_joint_position_controller/joints/right_w1_controller/command [unknown type]
+ * /alice/right_joint_effort_controller/joints/right_s1_controller/command [std_msgs/Float64]
+ * /alice/right_joint_effort_controller/joints/right_s0_controller/command [std_msgs/Float64]
+
+Services: 
+ * /gazebo/apply_joint_effort
+ * /alice/left_joint_position_controller/joints/left_s0_controller/pid/set_parameters
+ * /gazebo/get_physics_properties
+ * /alice/controller_manager/load_controller
+ * /bob/controller_manager/reload_controller_libraries
+ * /alice/left_joint_velocity_controller/joints/left_w1_controller/pid/set_parameters
+ * /alice/left_joint_velocity_controller/joints/left_w2_controller/pid/set_parameters
+ * /alice/left_joint_velocity_controller/joints/left_s0_controller/pid/set_parameters
+ * /alice/left_joint_position_controller/joints/left_w1_controller/pid/set_parameters
+ * /gazebo/reset_world
+ * /alice/right_joint_velocity_controller/joints/right_w2_controller/pid/set_parameters
+ * /bob/right_joint_velocity_controller/joints/right_e0_controller/pid/set_parameters
+ * /alice/right_joint_velocity_controller/joints/right_w0_controller/pid/set_parameters
+ * /alice/right_joint_velocity_controller/joints/right_s0_controller/pid/set_parameters
+ * /bob/left_joint_velocity_controller/joints/left_w1_controller/pid/set_parameters
+ * /bob/left_joint_position_controller/joints/left_w0_controller/pid/set_parameters
+ * /gazebo/clear_body_wrenches
+ * /alice/right_joint_velocity_controller/joints/right_e0_controller/pid/set_parameters
+ * /bob/right_gripper_controller/joints/r_gripper_r_finger_controller/pid/set_parameters
+ * /alice/left_hand_camera/set_camera_info
+ * /bob/right_hand_camera/set_camera_info
+ * /bob/head_camera/image/theora/set_parameters
+ * /bob/left_gripper_controller/joints/l_gripper_l_finger_controller/pid/set_parameters
+ * /gazebo/set_link_properties
+ * /gazebo/get_joint_properties
+ * /bob/left_joint_velocity_controller/joints/left_w2_controller/pid/set_parameters
+ * /bob/right_joint_position_controller/joints/right_w1_controller/pid/set_parameters
+ * /bob/right_joint_position_controller/joints/right_e1_controller/pid/set_parameters
+ * /bob/left_joint_velocity_controller/joints/left_e1_controller/pid/set_parameters
+ * /bob/left_joint_position_controller/joints/left_s0_controller/pid/set_parameters
+ * /bob/right_gripper_controller/joints/r_gripper_l_finger_controller/pid/set_parameters
+ * /alice/left_hand_camera/image/theora/set_parameters
+ * /bob/right_joint_position_controller/joints/right_s1_controller/pid/set_parameters
+ * /alice/right_joint_position_controller/joints/right_w0_controller/pid/set_parameters
+ * /alice/left_hand_camera/image/compressedDepth/set_parameters
+ * /alice/left_joint_position_controller/joints/left_w0_controller/pid/set_parameters
+ * /gazebo/set_model_configuration
+ * /alice/right_hand_camera/set_parameters
+ * /alice/right_gripper_controller/joints/r_gripper_l_finger_controller/pid/set_parameters
+ * /gazebo/spawn_sdf_model
+ * /alice/right_joint_velocity_controller/joints/right_e1_controller/pid/set_parameters
+ * /gazebo/unpause_physics
+ * /alice/controller_manager/unload_controller
+ * /bob/controller_manager/list_controllers
+ * /gazebo/pause_physics
+ * /bob/right_joint_position_controller/joints/right_e0_controller/pid/set_parameters
+ * /alice/left_joint_position_controller/joints/left_e1_controller/pid/set_parameters
+ * /bob/right_hand_camera/image/theora/set_parameters
+ * /bob/head_camera/set_camera_info
+ * /bob/left_joint_position_controller/joints/left_e1_controller/pid/set_parameters
+ * /alice/controller_manager/list_controller_types
+ * /bob/right_joint_velocity_controller/joints/right_s1_controller/pid/set_parameters
+ * /gazebo/spawn_urdf_model
+ * /bob/left_hand_camera/set_parameters
+ * /gazebo/get_link_state
+ * /gazebo/get_light_properties
+ * /alice/right_joint_position_controller/joints/right_s0_controller/pid/set_parameters
+ * /gazebo/set_light_properties
+ * /bob/right_joint_velocity_controller/joints/right_w1_controller/pid/set_parameters
+ * /alice/left_gripper_controller/joints/l_gripper_l_finger_controller/pid/set_parameters
+ * /alice/right_joint_velocity_controller/joints/right_w1_controller/pid/set_parameters
+ * /alice/right_joint_position_controller/joints/right_w1_controller/pid/set_parameters
+ * /alice/right_hand_camera/image/compressedDepth/set_parameters
+ * /alice/left_joint_velocity_controller/joints/left_s1_controller/pid/set_parameters
+ * /bob/head_position_controller/joints/head_controller/pid/set_parameters
+ * /bob/left_joint_velocity_controller/joints/left_e0_controller/pid/set_parameters
+ * /gazebo/set_joint_properties
+ * /bob/controller_manager/load_controller
+ * /alice/right_joint_position_controller/joints/right_e0_controller/pid/set_parameters
+ * /alice/head_camera/image/compressedDepth/set_parameters
+ * /alice/left_joint_velocity_controller/joints/left_e0_controller/pid/set_parameters
+ * /gazebo/get_world_properties
+ * /gazebo/delete_light
+ * /gazebo/set_parameters
+ * /alice/left_joint_position_controller/joints/left_s1_controller/pid/set_parameters
+ * /bob/left_joint_position_controller/joints/left_s1_controller/pid/set_parameters
+ * /alice/controller_manager/reload_controller_libraries
+ * /alice/head_camera/set_parameters
+ * /alice/right_joint_position_controller/joints/right_e1_controller/pid/set_parameters
+ * /bob/left_hand_camera/image/theora/set_parameters
+ * /alice/left_joint_position_controller/joints/left_w2_controller/pid/set_parameters
+ * /alice/head_camera/image/compressed/set_parameters
+ * /bob/left_joint_position_controller/joints/left_e0_controller/pid/set_parameters
+ * /alice/left_joint_velocity_controller/joints/left_w0_controller/pid/set_parameters
+ * /alice/right_hand_camera/set_camera_info
+ * /bob/left_joint_velocity_controller/joints/left_w0_controller/pid/set_parameters
+ * /bob/left_hand_camera/image/compressed/set_parameters
+ * /alice/left_joint_position_controller/joints/left_e0_controller/pid/set_parameters
+ * /bob/left_hand_camera/image/compressedDepth/set_parameters
+ * /bob/left_joint_position_controller/joints/left_w1_controller/pid/set_parameters
+ * /gazebo/set_model_state
+ * /alice/right_gripper_controller/joints/r_gripper_r_finger_controller/pid/set_parameters
+ * /alice/right_joint_velocity_controller/joints/right_s1_controller/pid/set_parameters
+ * /bob/left_gripper_controller/joints/l_gripper_r_finger_controller/pid/set_parameters
+ * /bob/controller_manager/list_controller_types
+ * /gazebo/get_link_properties
+ * /bob/right_hand_camera/image/compressedDepth/set_parameters
+ * /bob/right_joint_position_controller/joints/right_w2_controller/pid/set_parameters
+ * /gazebo/set_link_state
+ * /bob/right_hand_camera/set_parameters
+ * /alice/controller_manager/switch_controller
+ * /alice/left_joint_velocity_controller/joints/left_e1_controller/pid/set_parameters
+ * /alice/right_hand_camera/image/compressed/set_parameters
+ * /gazebo/set_logger_level
+ * /alice/head_camera/set_camera_info
+ * /alice/left_hand_camera/image/compressed/set_parameters
+ * /bob/left_hand_camera/set_camera_info
+ * /alice/head_position_controller/joints/head_controller/pid/set_parameters
+ * /bob/left_joint_velocity_controller/joints/left_s1_controller/pid/set_parameters
+ * /alice/head_camera/image/theora/set_parameters
+ * /alice/right_joint_position_controller/joints/right_w2_controller/pid/set_parameters
+ * /bob/controller_manager/switch_controller
+ * /gazebo/get_loggers
+ * /alice/right_joint_position_controller/joints/right_s1_controller/pid/set_parameters
+ * /bob/controller_manager/unload_controller
+ * /gazebo/clear_joint_forces
+ * /bob/right_joint_velocity_controller/joints/right_w0_controller/pid/set_parameters
+ * /bob/right_joint_velocity_controller/joints/right_e1_controller/pid/set_parameters
+ * /bob/left_joint_velocity_controller/joints/left_s0_controller/pid/set_parameters
+ * /gazebo/set_physics_properties
+ * /alice/controller_manager/list_controllers
+ * /gazebo/reset_simulation
+ * /bob/head_camera/image/compressed/set_parameters
+ * /bob/right_joint_position_controller/joints/right_s0_controller/pid/set_parameters
+ * /gazebo/apply_body_wrench
+ * /alice/right_hand_camera/image/theora/set_parameters
+ * /bob/right_hand_camera/image/compressed/set_parameters
+ * /bob/left_joint_position_controller/joints/left_w2_controller/pid/set_parameters
+ * /bob/right_joint_velocity_controller/joints/right_w2_controller/pid/set_parameters
+ * /gazebo/delete_model
+ * /bob/right_joint_position_controller/joints/right_w0_controller/pid/set_parameters
+ * /bob/right_joint_velocity_controller/joints/right_s0_controller/pid/set_parameters
+ * /gazebo/get_model_state
+ * /alice/left_gripper_controller/joints/l_gripper_r_finger_controller/pid/set_parameters
+ * /bob/head_camera/set_parameters
+ * /alice/left_hand_camera/set_parameters
+ * /gazebo/get_model_properties
+ * /bob/head_camera/image/compressedDepth/set_parameters
+
+
+contacting node http://localhost:46244/ ...
+Pid: 7924
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /clock
+    * to: /alice/right_gripper_controller_spawner_stopped
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /alice/left_gripper_controller_spawner_stopped
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /alice/controller_spawner
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /bob/left_gripper_controller_spawner_stopped
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /alice/controller_spawner_stopped
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /bob/right_gripper_controller_spawner_stopped
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /bob/controller_spawner
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /bob/controller_spawner_stopped
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /alice/baxter_sim_kinematics_left
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /alice/baxter_sim_kinematics_right
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /alice/baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /alice/robot_state_publisher
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /bob/baxter_sim_kinematics_left
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /bob/baxter_sim_kinematics_right
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /alice/baxter_sim_io
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /bob/baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /bob/robot_state_publisher
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /bob/baxter_sim_io
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo_client
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /bob/sim/laserscan/left_hand_range/state
+    * to: /bob/baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /bob/sim/laserscan/right_hand_range/state
+    * to: /bob/baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/sim/laserscan/left_hand_range/state
+    * to: /alice/baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/sim/laserscan/right_hand_range/state
+    * to: /alice/baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/joint_states
+    * to: /alice/baxter_sim_kinematics_left
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/joint_states
+    * to: /alice/baxter_sim_kinematics_right
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/joint_states
+    * to: /alice/robot_state_publisher
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/joint_states
+    * to: /alice/baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /bob/joint_states
+    * to: /bob/baxter_sim_kinematics_left
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /bob/joint_states
+    * to: /bob/baxter_sim_kinematics_right
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /bob/joint_states
+    * to: /bob/robot_state_publisher
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /bob/joint_states
+    * to: /bob/baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /bob/left_joint_effort_controller/joints/left_e0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /bob/left_joint_effort_controller/joints/left_e1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /bob/left_joint_effort_controller/joints/left_s0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /bob/left_joint_effort_controller/joints/left_s1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /bob/left_joint_effort_controller/joints/left_w0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /bob/left_joint_effort_controller/joints/left_w1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /bob/left_joint_effort_controller/joints/left_w2_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /bob/right_joint_effort_controller/joints/right_e0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /bob/right_joint_effort_controller/joints/right_e1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /bob/right_joint_effort_controller/joints/right_s0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /bob/right_joint_effort_controller/joints/right_s1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /bob/right_joint_effort_controller/joints/right_w0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /bob/right_joint_effort_controller/joints/right_w1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /bob/right_joint_effort_controller/joints/right_w2_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /alice/left_joint_effort_controller/joints/left_e0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /alice/left_joint_effort_controller/joints/left_e1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /alice/left_joint_effort_controller/joints/left_s0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /alice/left_joint_effort_controller/joints/left_s1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /alice/left_joint_effort_controller/joints/left_w0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /alice/left_joint_effort_controller/joints/left_w1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /alice/left_joint_effort_controller/joints/left_w2_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /alice/right_joint_effort_controller/joints/right_e0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /alice/right_joint_effort_controller/joints/right_e1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /alice/right_joint_effort_controller/joints/right_s0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /alice/right_joint_effort_controller/joints/right_s1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /alice/right_joint_effort_controller/joints/right_w0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /alice/right_joint_effort_controller/joints/right_w1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /alice/right_joint_effort_controller/joints/right_w2_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /clock
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /bob/state
+    * to: /bob/baxter_emulator (http://localhost:34795/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /bob/xdisplay
+    * to: /bob/baxter_emulator (http://localhost:34795/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /alice/xdisplay
+    * to: /alice/baxter_emulator (http://localhost:45389/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /alice/state
+    * to: /alice/baxter_emulator (http://localhost:45389/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /bob/left_joint_effort_controller/joints/left_e0_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /bob/left_joint_effort_controller/joints/left_e1_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /bob/left_joint_effort_controller/joints/left_s0_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /bob/left_joint_effort_controller/joints/left_s1_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /bob/left_joint_effort_controller/joints/left_w0_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /bob/left_joint_effort_controller/joints/left_w1_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /bob/left_joint_effort_controller/joints/left_w2_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /bob/right_joint_effort_controller/joints/right_e0_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /bob/right_joint_effort_controller/joints/right_e1_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /bob/right_joint_effort_controller/joints/right_s0_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /bob/right_joint_effort_controller/joints/right_s1_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /bob/right_joint_effort_controller/joints/right_w0_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /bob/right_joint_effort_controller/joints/right_w1_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /bob/right_joint_effort_controller/joints/right_w2_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /alice/left_joint_effort_controller/joints/left_e0_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /alice/left_joint_effort_controller/joints/left_e1_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /alice/left_joint_effort_controller/joints/left_s0_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /alice/left_joint_effort_controller/joints/left_s1_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /alice/left_joint_effort_controller/joints/left_w0_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /alice/left_joint_effort_controller/joints/left_w1_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /alice/left_joint_effort_controller/joints/left_w2_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /alice/right_joint_effort_controller/joints/right_e0_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /alice/right_joint_effort_controller/joints/right_e1_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /alice/right_joint_effort_controller/joints/right_s0_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /alice/right_joint_effort_controller/joints/right_s1_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /alice/right_joint_effort_controller/joints/right_w0_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /alice/right_joint_effort_controller/joints/right_w1_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /alice/right_joint_effort_controller/joints/right_w2_controller/command
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+

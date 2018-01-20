@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------
+Node [/robot_state_publisher]
+Publications: 
+ * /tf [tf2_msgs/TFMessage]
+ * /tf_static [tf2_msgs/TFMessage]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /robot/joint_states [sensor_msgs/JointState]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /robot_state_publisher/get_loggers
+ * /robot_state_publisher/set_logger_level
+
+
+contacting node http://localhost:46163/ ...
+Pid: 2491
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /baxter_sim_kinematics_left
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /baxter_sim_kinematics_right
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /baxter_sim_kinematics_left
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /baxter_sim_kinematics_right
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /robot/joint_states
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: TCPROS
+

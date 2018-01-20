@@ -1,0 +1,25 @@
+--------------------------------------------------------------------------------
+Node [/robot/left_gripper_controller_spawner_stopped]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /robot/left_gripper_controller_spawner_stopped/get_loggers
+ * /robot/left_gripper_controller_spawner_stopped/set_logger_level
+
+
+contacting node http://localhost:34444/ ...
+Pid: 2438
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: TCPROS
+

@@ -1,0 +1,12 @@
+/base_to_world
+/baxter_emulator
+/baxter_sim_kinematics_left
+/baxter_sim_kinematics_right
+/gazebo
+/gazebo_client
+/robot/controller_spawner
+/robot/controller_spawner_stopped
+/robot/left_gripper_controller_spawner_stopped
+/robot/right_gripper_controller_spawner_stopped
+/robot_state_publisher
+/rosout

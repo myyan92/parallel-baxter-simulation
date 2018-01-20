@@ -1,0 +1,8 @@
+Type: sensor_msgs/PointCloud
+
+Publishers: 
+ * /gazebo (http://localhost:42526/)
+
+Subscribers: None
+
+

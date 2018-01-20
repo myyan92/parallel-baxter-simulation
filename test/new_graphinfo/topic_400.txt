@@ -1,0 +1,8 @@
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /gazebo (http://localhost:46244/)
+
+Subscribers: None
+
+

@@ -1,0 +1,8 @@
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /baxter_emulator (http://localhost:36631/)
+
+Subscribers: None
+
+

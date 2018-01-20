@@ -1,0 +1,80 @@
+--------------------------------------------------------------------------------
+Node [/bob/robot_state_publisher]
+Publications: 
+ * /tf [tf2_msgs/TFMessage]
+ * /rosout [rosgraph_msgs/Log]
+ * /tf_static [tf2_msgs/TFMessage]
+
+Subscriptions: 
+ * /bob/joint_states [sensor_msgs/JointState]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /bob/robot_state_publisher/get_loggers
+ * /bob/robot_state_publisher/set_logger_level
+
+
+contacting node http://localhost:34886/ ...
+Pid: 7724
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /bob/baxter_sim_kinematics_right
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /bob/baxter_sim_kinematics_left
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /alice/baxter_sim_kinematics_left
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /alice/baxter_sim_kinematics_right
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /alice/baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /bob/baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /alice/baxter_sim_kinematics_left
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /alice/baxter_sim_kinematics_right
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /bob/baxter_sim_kinematics_right
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /bob/baxter_sim_kinematics_left
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /alice/baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /bob/baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /bob/joint_states
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: TCPROS
+

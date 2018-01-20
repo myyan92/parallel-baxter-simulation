@@ -1,0 +1,9 @@
+Type: std_msgs/Float64
+
+Publishers: 
+ * /gazebo (http://localhost:42526/)
+
+Subscribers: 
+ * /gazebo (http://localhost:42526/)
+
+

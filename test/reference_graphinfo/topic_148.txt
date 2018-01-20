@@ -1,0 +1,8 @@
+Type: baxter_core_msgs/EndpointState
+
+Publishers: 
+ * /baxter_sim_kinematics_right (http://localhost:44925/)
+
+Subscribers: None
+
+

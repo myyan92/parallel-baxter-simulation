@@ -1,0 +1,8 @@
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /rosout (http://localhost:45771/)
+
+Subscribers: None
+
+

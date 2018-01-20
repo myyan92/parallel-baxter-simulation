@@ -1,0 +1,115 @@
+--------------------------------------------------------------------------------
+Node [/baxter_emulator]
+Publications: 
+ * /robot/analog_io/left_hand_range/value_uint32 [std_msgs/UInt32]
+ * /robot/limb/left/gravity_compensation_torques [baxter_core_msgs/SEAJointState]
+ * /robot/digital_io/torso_right_inner_light/state [baxter_core_msgs/DigitalIOState]
+ * /robot/xdisplay/compressedDepth/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/digital_io/right_inner_light/state [baxter_core_msgs/DigitalIOState]
+ * /robot/xdisplay/compressed [sensor_msgs/CompressedImage]
+ * /robot/xdisplay/theora [theora_image_transport/Packet]
+ * /robot/digital_io/torso_left_inner_light/state [baxter_core_msgs/DigitalIOState]
+ * /robot/digital_io/left_inner_light/state [baxter_core_msgs/DigitalIOState]
+ * /robot/end_effector/left_gripper/state [baxter_core_msgs/EndEffectorState]
+ * /robot/xdisplay/compressedDepth/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/digital_io/left_outer_light/state [baxter_core_msgs/DigitalIOState]
+ * /robot/xdisplay/compressedDepth [sensor_msgs/CompressedImage]
+ * /robot/analog_io/right_hand_range/state [baxter_core_msgs/AnalogIOState]
+ * /robot/end_effector/left_gripper/properties [baxter_core_msgs/EndEffectorProperties]
+ * /robot/state [baxter_core_msgs/AssemblyState]
+ * /robot/analog_io/right_hand_range/value_uint32 [std_msgs/UInt32]
+ * /robot/end_effector/right_gripper/state [baxter_core_msgs/EndEffectorState]
+ * /robot/analog_io/left_hand_range/state [baxter_core_msgs/AnalogIOState]
+ * /robot/digital_io/torso_right_outer_light/state [baxter_core_msgs/DigitalIOState]
+ * /robot/sim/started [std_msgs/Empty]
+ * /robot/xdisplay/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/digital_io/right_outer_light/state [baxter_core_msgs/DigitalIOState]
+ * /robot/xdisplay/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/range/left_hand_range/state [sensor_msgs/Range]
+ * /rosout [rosgraph_msgs/Log]
+ * /robot/limb/right/gravity_compensation_torques [baxter_core_msgs/SEAJointState]
+ * /robot/range/right_hand_range/state [sensor_msgs/Range]
+ * /robot/xdisplay [sensor_msgs/Image]
+ * /robot/xdisplay/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/end_effector/right_gripper/properties [baxter_core_msgs/EndEffectorProperties]
+ * /robot/head/head_state [baxter_core_msgs/HeadState]
+ * /robot/xdisplay/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/digital_io/torso_left_outer_light/state [baxter_core_msgs/DigitalIOState]
+
+Subscriptions: 
+ * /tf [tf2_msgs/TFMessage]
+ * /robot/set_super_reset [unknown type]
+ * /robot/digital_io/command [unknown type]
+ * /sim/laserscan/left_hand_range/state [sensor_msgs/LaserScan]
+ * /tf_static [tf2_msgs/TFMessage]
+ * /robot/set_super_stop [unknown type]
+ * /robot/head/command_head_nod [unknown type]
+ * /robot/joint_states [sensor_msgs/JointState]
+ * /sim/laserscan/right_hand_range/state [sensor_msgs/LaserScan]
+ * /robot/set_super_enable [unknown type]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /robot/xdisplay/theora/set_parameters
+ * /baxter_emulator/get_loggers
+ * /robot/xdisplay/compressed/set_parameters
+ * /robot/xdisplay/compressedDepth/set_parameters
+ * /baxter_emulator/set_logger_level
+
+
+contacting node http://localhost:36631/ ...
+Pid: 2398
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /robot/state
+    * to: /baxter_sim_kinematics_left
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /robot/state
+    * to: /baxter_sim_kinematics_right
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /robot/state
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /robot/xdisplay
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /robot/xdisplay
+    * to: /gazebo_client
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /robot/joint_states
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sim/laserscan/left_hand_range/state
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sim/laserscan/right_hand_range/state
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /robot_state_publisher (http://localhost:46163/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /robot_state_publisher (http://localhost:46163/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /base_to_world (http://localhost:45359/)
+    * direction: inbound
+    * transport: TCPROS
+

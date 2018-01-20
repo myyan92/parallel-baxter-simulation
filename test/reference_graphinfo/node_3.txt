@@ -1,0 +1,51 @@
+--------------------------------------------------------------------------------
+Node [/baxter_sim_kinematics_left]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+ * /robot/limb/left/endpoint_state [baxter_core_msgs/EndpointState]
+
+Subscriptions: 
+ * /robot/state [baxter_core_msgs/AssemblyState]
+ * /tf [tf2_msgs/TFMessage]
+ * /tf_static [tf2_msgs/TFMessage]
+ * /robot/joint_states [sensor_msgs/JointState]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /ExternalTools/left/PositionKinematicsNode/IKService
+ * /baxter_sim_kinematics_left/get_loggers
+ * /baxter_sim_kinematics_left/set_logger_level
+
+
+contacting node http://localhost:41333/ ...
+Pid: 2379
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /robot/joint_states
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /robot/state
+    * to: /baxter_emulator (http://localhost:36631/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /robot_state_publisher (http://localhost:46163/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /base_to_world (http://localhost:45359/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /robot_state_publisher (http://localhost:46163/)
+    * direction: inbound
+    * transport: TCPROS
+

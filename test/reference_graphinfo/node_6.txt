@@ -1,0 +1,30 @@
+--------------------------------------------------------------------------------
+Node [/gazebo_client]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /robot/xdisplay [sensor_msgs/Image]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /gazebo_client/set_logger_level
+ * /gazebo_client/get_loggers
+
+
+contacting node http://localhost:39308/ ...
+Pid: 2566
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /robot/xdisplay
+    * to: /baxter_emulator (http://localhost:36631/)
+    * direction: inbound
+    * transport: TCPROS
+

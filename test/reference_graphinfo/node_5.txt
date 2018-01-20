@@ -1,0 +1,514 @@
+--------------------------------------------------------------------------------
+Node [/gazebo]
+Publications: 
+ * /robot/left_joint_velocity_controller/joints/left_e0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_position_controller/joints/left_w0_controller/state [control_msgs/JointControllerState]
+ * /cameras/right_hand_camera/image/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/left_gripper_controller/joints/l_gripper_r_finger_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/left_joint_position_controller/joints/left_w0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_velocity_controller/joints/left_s1_controller/state [control_msgs/JointControllerState]
+ * /robot/right_joint_effort_controller/joints/right_s1_controller/command [std_msgs/Float64]
+ * /cameras/head_camera/image/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/right_joint_position_controller/joints/right_w0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /cameras/left_hand_camera/image/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /cameras/right_hand_camera/image [sensor_msgs/Image]
+ * /cameras/right_hand_camera/image/theora [theora_image_transport/Packet]
+ * /robot/right_joint_position_controller/joints/right_w1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_position_controller/joints/left_s1_controller/state [control_msgs/JointControllerState]
+ * /robot/right_gripper_controller/joints/r_gripper_r_finger_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/right_joint_velocity_controller/joints/right_w2_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_velocity_controller/joints/left_s0_controller/state [control_msgs/JointControllerState]
+ * /cameras/left_hand_camera/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_velocity_controller/joints/left_e0_controller/state [control_msgs/JointControllerState]
+ * /robot/left_joint_position_controller/joints/left_w2_controller/state [control_msgs/JointControllerState]
+ * /robot/right_joint_position_controller/joints/right_w2_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_position_controller/joints/left_s1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/head_position_controller/joints/head_controller/state [control_msgs/JointControllerState]
+ * /robot/left_joint_position_controller/joints/left_w2_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /cameras/left_hand_camera/image/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/right_joint_velocity_controller/joints/right_e1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/left_joint_velocity_controller/joints/left_e1_controller/state [control_msgs/JointControllerState]
+ * /robot/right_joint_position_controller/joints/right_w1_controller/state [control_msgs/JointControllerState]
+ * /robot/left_gripper_controller/joints/l_gripper_r_finger_controller/state [control_msgs/JointControllerState]
+ * /cameras/left_hand_camera/image/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /cameras/left_hand_camera/camera_info [sensor_msgs/CameraInfo]
+ * /robot/left_joint_position_controller/joints/left_e1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/left_joint_effort_controller/joints/left_s1_controller/command [std_msgs/Float64]
+ * /robot/right_joint_velocity_controller/joints/right_s1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/left_joint_velocity_controller/joints/left_e0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/right_joint_position_controller/joints/right_w0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/left_joint_velocity_controller/joints/left_w2_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/right_joint_velocity_controller/joints/right_e1_controller/state [control_msgs/JointControllerState]
+ * /cameras/right_hand_camera/image/compressedDepth [sensor_msgs/CompressedImage]
+ * /robot/right_joint_velocity_controller/joints/right_w0_controller/state [control_msgs/JointControllerState]
+ * /gazebo/model_states [gazebo_msgs/ModelStates]
+ * /robot/left_gripper_controller/joints/l_gripper_l_finger_controller/state [control_msgs/JointControllerState]
+ * /robot/right_joint_effort_controller/joints/right_w0_controller/command [std_msgs/Float64]
+ * /cameras/right_hand_camera/image/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/right_joint_effort_controller/joints/right_e0_controller/command [std_msgs/Float64]
+ * /robot/left_joint_effort_controller/joints/left_w1_controller/command [std_msgs/Float64]
+ * /cameras/left_hand_camera/image [sensor_msgs/Image]
+ * /cameras/head_camera/image [sensor_msgs/Image]
+ * /robot/right_joint_velocity_controller/joints/right_w0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /cameras/left_hand_camera/image/compressedDepth [sensor_msgs/CompressedImage]
+ * /robot/left_joint_position_controller/joints/left_w1_controller/state [control_msgs/JointControllerState]
+ * /cameras/right_hand_camera/image/compressedDepth/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/right_joint_position_controller/joints/right_e0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_velocity_controller/joints/left_w1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/right_joint_position_controller/joints/right_s1_controller/state [control_msgs/JointControllerState]
+ * /robot/right_joint_position_controller/joints/right_e1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_position_controller/joints/left_w1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/left_joint_velocity_controller/joints/left_e1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_velocity_controller/joints/left_s1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/left_joint_position_controller/joints/left_w0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/right_joint_effort_controller/joints/right_e1_controller/command [std_msgs/Float64]
+ * /robot/right_gripper_controller/joints/r_gripper_l_finger_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /gazebo/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /cameras/head_camera/image/compressedDepth/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /cameras/right_hand_camera/image/compressedDepth/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/right_gripper_controller/joints/r_gripper_r_finger_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /cameras/head_camera/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/sonar/head_sonar/state [sensor_msgs/PointCloud]
+ * /robot/left_joint_velocity_controller/joints/left_s0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_velocity_controller/joints/left_w2_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /cameras/left_hand_camera/image/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/right_joint_velocity_controller/joints/right_e0_controller/state [control_msgs/JointControllerState]
+ * /robot/left_joint_velocity_controller/joints/left_s0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /cameras/head_camera/image/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/left_gripper_controller/joints/l_gripper_r_finger_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/right_joint_position_controller/joints/right_s0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/right_joint_position_controller/joints/right_w0_controller/state [control_msgs/JointControllerState]
+ * /cameras/head_camera/image/compressed [sensor_msgs/CompressedImage]
+ * /robot/left_joint_position_controller/joints/left_e0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/right_joint_velocity_controller/joints/right_w1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /cameras/left_hand_camera/image/compressed [sensor_msgs/CompressedImage]
+ * /robot/left_joint_effort_controller/joints/left_s0_controller/command [std_msgs/Float64]
+ * /cameras/head_camera/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_effort_controller/joints/left_w2_controller/command [std_msgs/Float64]
+ * /robot/right_joint_position_controller/joints/right_s0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /cameras/head_camera/image/compressedDepth/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/right_joint_effort_controller/joints/right_w1_controller/command [std_msgs/Float64]
+ * /cameras/head_camera/image/theora [theora_image_transport/Packet]
+ * /cameras/left_hand_camera/image/compressedDepth/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_position_controller/joints/left_e0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/right_joint_effort_controller/joints/right_s0_controller/command [std_msgs/Float64]
+ * /cameras/left_hand_camera/image/theora [theora_image_transport/Packet]
+ * /robot/left_joint_effort_controller/joints/left_e0_controller/command [std_msgs/Float64]
+ * /robot/right_joint_velocity_controller/joints/right_e0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/right_joint_velocity_controller/joints/right_e0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /cameras/left_hand_camera/image/compressedDepth/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/right_joint_position_controller/joints/right_s1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/right_joint_velocity_controller/joints/right_w0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/right_joint_velocity_controller/joints/right_s0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_position_controller/joints/left_s1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/right_gripper_controller/joints/r_gripper_l_finger_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/right_joint_position_controller/joints/right_e0_controller/state [control_msgs/JointControllerState]
+ * /robot/right_joint_velocity_controller/joints/right_w2_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/right_joint_position_controller/joints/right_e1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/left_joint_velocity_controller/joints/left_w1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/left_joint_velocity_controller/joints/left_w0_controller/state [control_msgs/JointControllerState]
+ * /robot/head_position_controller/joints/head_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_position_controller/joints/left_s0_controller/state [control_msgs/JointControllerState]
+ * /robot/right_joint_velocity_controller/joints/right_w1_controller/state [control_msgs/JointControllerState]
+ * /robot/left_joint_position_controller/joints/left_s0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /rosout [rosgraph_msgs/Log]
+ * /cameras/head_camera/camera_info [sensor_msgs/CameraInfo]
+ * /robot/left_joint_velocity_controller/joints/left_w2_controller/state [control_msgs/JointControllerState]
+ * /cameras/head_camera/image/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_position_controller/joints/left_w1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /cameras/right_hand_camera/image/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_velocity_controller/joints/left_e1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /cameras/right_hand_camera/image/compressed [sensor_msgs/CompressedImage]
+ * /robot/right_joint_position_controller/joints/right_w1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/right_joint_position_controller/joints/right_s1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/right_gripper_controller/joints/r_gripper_l_finger_controller/state [control_msgs/JointControllerState]
+ * /robot/right_joint_velocity_controller/joints/right_s1_controller/state [control_msgs/JointControllerState]
+ * /robot/right_joint_velocity_controller/joints/right_s0_controller/state [control_msgs/JointControllerState]
+ * /gazebo/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/right_joint_velocity_controller/joints/right_w1_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /cameras/right_hand_camera/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/right_joint_position_controller/joints/right_e1_controller/state [control_msgs/JointControllerState]
+ * /robot/left_joint_velocity_controller/joints/left_w1_controller/state [control_msgs/JointControllerState]
+ * /cameras/right_hand_camera/image/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_velocity_controller/joints/left_w0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /cameras/right_hand_camera/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/right_joint_velocity_controller/joints/right_s1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /sim/laserscan/left_hand_range/state [sensor_msgs/LaserScan]
+ * /robot/left_joint_position_controller/joints/left_e0_controller/state [control_msgs/JointControllerState]
+ * /robot/left_joint_position_controller/joints/left_s0_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/right_joint_position_controller/joints/right_w2_controller/state [control_msgs/JointControllerState]
+ * /robot/left_joint_velocity_controller/joints/left_s1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_velocity_controller/joints/left_w0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /cameras/left_hand_camera/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /cameras/head_camera/image/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/right_joint_position_controller/joints/right_e0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /cameras/right_hand_camera/camera_info [sensor_msgs/CameraInfo]
+ * /robot/right_gripper_controller/joints/r_gripper_r_finger_controller/state [control_msgs/JointControllerState]
+ * /robot/right_joint_effort_controller/joints/right_w2_controller/command [std_msgs/Float64]
+ * /robot/left_joint_effort_controller/joints/left_e1_controller/command [std_msgs/Float64]
+ * /robot/left_joint_position_controller/joints/left_e1_controller/state [control_msgs/JointControllerState]
+ * /cameras/head_camera/image/compressedDepth [sensor_msgs/CompressedImage]
+ * /robot/right_joint_velocity_controller/joints/right_s0_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/left_gripper_controller/joints/l_gripper_l_finger_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/right_joint_velocity_controller/joints/right_w2_controller/state [control_msgs/JointControllerState]
+ * /robot/right_joint_position_controller/joints/right_w2_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/left_joint_position_controller/joints/left_e1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/left_joint_position_controller/joints/left_w2_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/joint_states [sensor_msgs/JointState]
+ * /sim/laserscan/right_hand_range/state [sensor_msgs/LaserScan]
+ * /gazebo/link_states [gazebo_msgs/LinkStates]
+ * /robot/left_gripper_controller/joints/l_gripper_l_finger_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /robot/left_joint_effort_controller/joints/left_w0_controller/command [std_msgs/Float64]
+ * /clock [rosgraph_msgs/Clock]
+ * /robot/right_joint_velocity_controller/joints/right_e1_controller/pid/parameter_updates [dynamic_reconfigure/Config]
+ * /robot/right_joint_position_controller/joints/right_s0_controller/state [control_msgs/JointControllerState]
+ * /robot/head_position_controller/joints/head_controller/pid/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+
+Subscriptions: 
+ * /robot/left_joint_velocity_controller/joints/left_w0_controller/command [unknown type]
+ * /robot/state [baxter_core_msgs/AssemblyState]
+ * /robot/right_joint_velocity_controller/joints/right_e1_controller/command [unknown type]
+ * /robot/right_joint_effort_controller/joints/right_w1_controller/command [std_msgs/Float64]
+ * /gazebo/set_link_state [unknown type]
+ * /robot/left_joint_velocity_controller/joints/left_w1_controller/command [unknown type]
+ * /robot/left_joint_position_controller/joints/left_e1_controller/command [unknown type]
+ * /robot/left_joint_velocity_controller/joints/left_w2_controller/command [unknown type]
+ * /robot/right_joint_velocity_controller/joints/right_s0_controller/command [unknown type]
+ * /robot/xdisplay [sensor_msgs/Image]
+ * /robot/right_joint_effort_controller/joints/right_w2_controller/command [std_msgs/Float64]
+ * /robot/right_joint_effort_controller/joints/right_s0_controller/command [std_msgs/Float64]
+ * /robot/left_joint_velocity_controller/joints/left_s0_controller/command [unknown type]
+ * /robot/right_joint_effort_controller/joints/right_e1_controller/command [std_msgs/Float64]
+ * /robot/left_joint_effort_controller/joints/left_e0_controller/command [std_msgs/Float64]
+ * /robot/left_joint_effort_controller/joints/left_e1_controller/command [std_msgs/Float64]
+ * /robot/end_effector/right_gripper/command [unknown type]
+ * /robot/left_joint_velocity_controller/joints/left_e0_controller/command [unknown type]
+ * /robot/left_joint_position_controller/joints/left_e0_controller/command [unknown type]
+ * /robot/left_joint_position_controller/joints/left_w1_controller/command [unknown type]
+ * /robot/left_joint_effort_controller/joints/left_w2_controller/command [std_msgs/Float64]
+ * /robot/right_joint_position_controller/joints/right_w0_controller/command [unknown type]
+ * /robot/right_joint_velocity_controller/joints/right_w1_controller/command [unknown type]
+ * /robot/right_joint_position_controller/joints/right_s0_controller/command [unknown type]
+ * /robot/right_joint_position_controller/joints/right_w2_controller/command [unknown type]
+ * /robot/right_joint_position_controller/joints/right_s1_controller/command [unknown type]
+ * /robot/left_joint_velocity_controller/joints/left_e1_controller/command [unknown type]
+ * /robot/limb/right/joint_command [unknown type]
+ * /robot/right_joint_effort_controller/joints/right_e0_controller/command [std_msgs/Float64]
+ * /robot/right_joint_velocity_controller/joints/right_e0_controller/command [unknown type]
+ * /robot/left_joint_position_controller/joints/left_w0_controller/command [unknown type]
+ * /robot/left_gripper_controller/joints/l_gripper_r_finger_controller/command [unknown type]
+ * /robot/right_joint_effort_controller/joints/right_w0_controller/command [std_msgs/Float64]
+ * /robot/right_joint_velocity_controller/joints/right_w2_controller/command [unknown type]
+ * /robot/end_effector/left_gripper/command [unknown type]
+ * /robot/left_joint_effort_controller/joints/left_s1_controller/command [std_msgs/Float64]
+ * /robot/right_joint_position_controller/joints/right_e1_controller/command [unknown type]
+ * /robot/right_joint_position_controller/joints/right_w1_controller/command [unknown type]
+ * /robot/limb/left/joint_command [unknown type]
+ * /robot/left_joint_position_controller/joints/left_s0_controller/command [unknown type]
+ * /robot/right_joint_effort_controller/joints/right_s1_controller/command [std_msgs/Float64]
+ * /robot/head_position_controller/joints/head_controller/command [unknown type]
+ * /robot/left_joint_position_controller/joints/left_w2_controller/command [unknown type]
+ * /robot/left_joint_position_controller/joints/left_s1_controller/command [unknown type]
+ * /gazebo/set_model_state [unknown type]
+ * /robot/right_joint_velocity_controller/joints/right_w0_controller/command [unknown type]
+ * /robot/right_gripper_controller/joints/r_gripper_l_finger_controller/command [unknown type]
+ * /robot/right_gripper_controller/joints/r_gripper_r_finger_controller/command [unknown type]
+ * /robot/right_joint_position_controller/joints/right_e0_controller/command [unknown type]
+ * /robot/left_joint_effort_controller/joints/left_w0_controller/command [std_msgs/Float64]
+ * /clock [rosgraph_msgs/Clock]
+ * /robot/left_joint_effort_controller/joints/left_s0_controller/command [std_msgs/Float64]
+ * /robot/right_joint_velocity_controller/joints/right_s1_controller/command [unknown type]
+ * /robot/left_joint_velocity_controller/joints/left_s1_controller/command [unknown type]
+ * /robot/head/command_head_pan [unknown type]
+ * /robot/left_joint_effort_controller/joints/left_w1_controller/command [std_msgs/Float64]
+ * /robot/left_gripper_controller/joints/l_gripper_l_finger_controller/command [unknown type]
+
+Services: 
+ * /gazebo/apply_joint_effort
+ * /robot/left_joint_velocity_controller/joints/left_w1_controller/pid/set_parameters
+ * /gazebo/get_physics_properties
+ * /robot/right_joint_velocity_controller/joints/right_w1_controller/pid/set_parameters
+ * /gazebo/unpause_physics
+ * /cameras/left_hand_camera/set_camera_info
+ * /robot/right_joint_velocity_controller/joints/right_s0_controller/pid/set_parameters
+ * /gazebo/reset_world
+ * /robot/left_gripper_controller/joints/l_gripper_l_finger_controller/pid/set_parameters
+ * /robot/right_joint_position_controller/joints/right_s1_controller/pid/set_parameters
+ * /robot/head_position_controller/joints/head_controller/pid/set_parameters
+ * /gazebo/clear_body_wrenches
+ * /robot/controller_manager/switch_controller
+ * /robot/left_joint_position_controller/joints/left_w1_controller/pid/set_parameters
+ * /gazebo/delete_model
+ * /robot/left_joint_position_controller/joints/left_s0_controller/pid/set_parameters
+ * /gazebo/set_joint_properties
+ * /gazebo/set_link_properties
+ * /robot/right_joint_position_controller/joints/right_e1_controller/pid/set_parameters
+ * /robot/controller_manager/list_controller_types
+ * /robot/right_joint_velocity_controller/joints/right_s1_controller/pid/set_parameters
+ * /robot/left_joint_velocity_controller/joints/left_s0_controller/pid/set_parameters
+ * /gazebo/set_model_configuration
+ * /gazebo/spawn_sdf_model
+ * /cameras/right_hand_camera/image/compressedDepth/set_parameters
+ * /robot/controller_manager/reload_controller_libraries
+ * /robot/left_gripper_controller/joints/l_gripper_r_finger_controller/pid/set_parameters
+ * /gazebo/pause_physics
+ * /robot/right_gripper_controller/joints/r_gripper_l_finger_controller/pid/set_parameters
+ * /robot/controller_manager/unload_controller
+ * /robot/right_gripper_controller/joints/r_gripper_r_finger_controller/pid/set_parameters
+ * /gazebo/get_joint_properties
+ * /robot/right_joint_position_controller/joints/right_w2_controller/pid/set_parameters
+ * /gazebo/spawn_urdf_model
+ * /robot/right_joint_position_controller/joints/right_w0_controller/pid/set_parameters
+ * /cameras/left_hand_camera/set_parameters
+ * /robot/left_joint_velocity_controller/joints/left_e0_controller/pid/set_parameters
+ * /robot/left_joint_position_controller/joints/left_w0_controller/pid/set_parameters
+ * /robot/left_joint_position_controller/joints/left_w2_controller/pid/set_parameters
+ * /gazebo/get_link_state
+ * /cameras/head_camera/set_camera_info
+ * /robot/right_joint_position_controller/joints/right_s0_controller/pid/set_parameters
+ * /cameras/right_hand_camera/image/theora/set_parameters
+ * /robot/left_joint_velocity_controller/joints/left_s1_controller/pid/set_parameters
+ * /cameras/head_camera/image/theora/set_parameters
+ * /robot/left_joint_position_controller/joints/left_e1_controller/pid/set_parameters
+ * /gazebo/get_world_properties
+ * /gazebo/set_parameters
+ * /cameras/left_hand_camera/image/theora/set_parameters
+ * /robot/left_joint_position_controller/joints/left_e0_controller/pid/set_parameters
+ * /robot/left_joint_velocity_controller/joints/left_w2_controller/pid/set_parameters
+ * /robot/right_joint_velocity_controller/joints/right_w0_controller/pid/set_parameters
+ * /cameras/left_hand_camera/image/compressed/set_parameters
+ * /cameras/right_hand_camera/image/compressed/set_parameters
+ * /robot/left_joint_velocity_controller/joints/left_w0_controller/pid/set_parameters
+ * /robot/right_joint_position_controller/joints/right_e0_controller/pid/set_parameters
+ * /robot/right_joint_velocity_controller/joints/right_e1_controller/pid/set_parameters
+ * /cameras/right_hand_camera/set_parameters
+ * /gazebo/set_model_state
+ * /robot/left_joint_position_controller/joints/left_s1_controller/pid/set_parameters
+ * /cameras/right_hand_camera/set_camera_info
+ * /cameras/head_camera/set_parameters
+ * /gazebo/get_link_properties
+ * /robot/controller_manager/list_controllers
+ * /gazebo/set_link_state
+ * /cameras/head_camera/image/compressed/set_parameters
+ * /gazebo/set_logger_level
+ * /robot/right_joint_position_controller/joints/right_w1_controller/pid/set_parameters
+ * /robot/right_joint_velocity_controller/joints/right_e0_controller/pid/set_parameters
+ * /gazebo/get_loggers
+ * /robot/controller_manager/load_controller
+ * /gazebo/spawn_gazebo_model
+ * /gazebo/clear_joint_forces
+ * /cameras/head_camera/image/compressedDepth/set_parameters
+ * /gazebo/set_physics_properties
+ * /gazebo/reset_simulation
+ * /gazebo/apply_body_wrench
+ * /cameras/left_hand_camera/image/compressedDepth/set_parameters
+ * /robot/right_joint_velocity_controller/joints/right_w2_controller/pid/set_parameters
+ * /gazebo/get_model_state
+ * /robot/left_joint_velocity_controller/joints/left_e1_controller/pid/set_parameters
+ * /gazebo/get_model_properties
+
+
+contacting node http://localhost:42526/ ...
+Pid: 2654
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /clock
+    * to: /robot/controller_spawner
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /robot/controller_spawner_stopped
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /robot/right_gripper_controller_spawner_stopped
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /robot/left_gripper_controller_spawner_stopped
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /baxter_sim_kinematics_left
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /base_to_world
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /baxter_sim_kinematics_right
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /robot_state_publisher
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo_client
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sim/laserscan/left_hand_range/state
+    * to: /baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sim/laserscan/right_hand_range/state
+    * to: /baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /robot/joint_states
+    * to: /baxter_sim_kinematics_left
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /robot/joint_states
+    * to: /baxter_sim_kinematics_right
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /robot/joint_states
+    * to: /robot_state_publisher
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /robot/joint_states
+    * to: /baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /robot/left_joint_effort_controller/joints/left_e0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /robot/left_joint_effort_controller/joints/left_e1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /robot/left_joint_effort_controller/joints/left_s0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /robot/left_joint_effort_controller/joints/left_s1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /robot/left_joint_effort_controller/joints/left_w0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /robot/left_joint_effort_controller/joints/left_w1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /robot/left_joint_effort_controller/joints/left_w2_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /robot/right_joint_effort_controller/joints/right_e0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /robot/right_joint_effort_controller/joints/right_e1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /robot/right_joint_effort_controller/joints/right_s0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /robot/right_joint_effort_controller/joints/right_s1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /robot/right_joint_effort_controller/joints/right_w0_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /robot/right_joint_effort_controller/joints/right_w1_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /robot/right_joint_effort_controller/joints/right_w2_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /clock
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /robot/state
+    * to: /baxter_emulator (http://localhost:36631/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /robot/xdisplay
+    * to: /baxter_emulator (http://localhost:36631/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /robot/left_joint_effort_controller/joints/left_e0_controller/command
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /robot/left_joint_effort_controller/joints/left_e1_controller/command
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /robot/left_joint_effort_controller/joints/left_s0_controller/command
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /robot/left_joint_effort_controller/joints/left_s1_controller/command
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /robot/left_joint_effort_controller/joints/left_w0_controller/command
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /robot/left_joint_effort_controller/joints/left_w1_controller/command
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /robot/left_joint_effort_controller/joints/left_w2_controller/command
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /robot/right_joint_effort_controller/joints/right_e0_controller/command
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /robot/right_joint_effort_controller/joints/right_e1_controller/command
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /robot/right_joint_effort_controller/joints/right_s0_controller/command
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /robot/right_joint_effort_controller/joints/right_s1_controller/command
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /robot/right_joint_effort_controller/joints/right_w0_controller/command
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /robot/right_joint_effort_controller/joints/right_w1_controller/command
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /robot/right_joint_effort_controller/joints/right_w2_controller/command
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+

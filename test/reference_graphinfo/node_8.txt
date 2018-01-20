@@ -1,0 +1,25 @@
+--------------------------------------------------------------------------------
+Node [/robot/controller_spawner_stopped]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /robot/controller_spawner_stopped/get_loggers
+ * /robot/controller_spawner_stopped/set_logger_level
+
+
+contacting node http://localhost:44903/ ...
+Pid: 2428
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: TCPROS
+

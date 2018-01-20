@@ -1,0 +1,8 @@
+Type: std_msgs/Float64
+
+Publishers: None
+
+Subscribers: 
+ * /gazebo (http://localhost:42526/)
+
+

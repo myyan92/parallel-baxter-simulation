@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications: 
+ * /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /rosout [rosgraph_msgs/Log]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /rosout/get_loggers
+ * /rosout/set_logger_level
+
+
+contacting node http://localhost:45771/ ...
+Pid: 2339
+Connections:
+ * topic: /clock
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /baxter_sim_kinematics_left (http://localhost:41333/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /base_to_world (http://localhost:45359/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /baxter_sim_kinematics_right (http://localhost:44925/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /baxter_emulator (http://localhost:36631/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /robot_state_publisher (http://localhost:46163/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /robot/controller_spawner (http://localhost:34325/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /robot/controller_spawner_stopped (http://localhost:44903/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /robot/right_gripper_controller_spawner_stopped (http://localhost:42224/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /robot/left_gripper_controller_spawner_stopped (http://localhost:34444/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /gazebo_client (http://localhost:39308/)
+    * direction: inbound
+    * transport: TCPROS
+

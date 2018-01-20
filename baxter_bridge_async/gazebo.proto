@@ -1,0 +1,16 @@
+syntax = "proto3";
+import "pose.proto";
+
+message ModelSpec {
+  string name = 1;
+  string path = 2;
+  Pose pose = 3;
+}
+
+message GazeboCommand {
+  repeated ModelSpec models = 1;
+}
+
+message GazeboObserve {
+  repeated ModelSpec models = 1;
+}

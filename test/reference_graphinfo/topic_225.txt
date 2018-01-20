@@ -1,0 +1,8 @@
+Type: std_msgs/Empty
+
+Publishers: None
+
+Subscribers: 
+ * /baxter_emulator (http://localhost:36631/)
+
+

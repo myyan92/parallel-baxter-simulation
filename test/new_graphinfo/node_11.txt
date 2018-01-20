@@ -1,0 +1,77 @@
+--------------------------------------------------------------------------------
+Node [/bob/baxter_sim_io]
+Publications: 
+ * /bob/navigators/left_navigator/state [baxter_core_msgs/NavigatorState]
+ * /bob/digital_io/left_upper_button/state [baxter_core_msgs/DigitalIOState]
+ * /bob/digital_io/left_shoulder_button/state [baxter_core_msgs/DigitalIOState]
+ * /bob/navigators/torso_left_navigator/state [baxter_core_msgs/NavigatorState]
+ * /bob/digital_io/left_lower_cuff/state [baxter_core_msgs/DigitalIOState]
+ * /bob/digital_io/left_lower_button/state [baxter_core_msgs/DigitalIOState]
+ * /bob/navigators/right_navigator/state [baxter_core_msgs/NavigatorState]
+ * /rosout [rosgraph_msgs/Log]
+ * /bob/digital_io/right_lower_button/state [baxter_core_msgs/DigitalIOState]
+ * /bob/digital_io/right_upper_button/state [baxter_core_msgs/DigitalIOState]
+ * /bob/digital_io/right_lower_cuff/state [baxter_core_msgs/DigitalIOState]
+ * /bob/digital_io/right_shoulder_button/state [baxter_core_msgs/DigitalIOState]
+ * /bob/navigators/torso_right_navigator/state [baxter_core_msgs/NavigatorState]
+
+Subscriptions: 
+ * /bob/digital_io/torso_left_inner_light/state [baxter_core_msgs/DigitalIOState]
+ * /bob/digital_io/right_inner_light/state [baxter_core_msgs/DigitalIOState]
+ * /bob/digital_io/torso_right_outer_light/state [baxter_core_msgs/DigitalIOState]
+ * /bob/digital_io/torso_left_outer_light/state [baxter_core_msgs/DigitalIOState]
+ * /bob/digital_io/left_inner_light/state [baxter_core_msgs/DigitalIOState]
+ * /bob/digital_io/left_outer_light/state [baxter_core_msgs/DigitalIOState]
+ * /clock [rosgraph_msgs/Clock]
+ * /bob/digital_io/right_outer_light/state [baxter_core_msgs/DigitalIOState]
+ * /bob/digital_io/torso_right_inner_light/state [baxter_core_msgs/DigitalIOState]
+
+Services: 
+ * /bob/baxter_sim_io/get_loggers
+ * /bob/baxter_sim_io/set_logger_level
+
+
+contacting node http://localhost:37435/ ...
+Pid: 7741
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /bob/digital_io/left_inner_light/state
+    * to: /bob/baxter_emulator (http://localhost:34795/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /bob/digital_io/left_outer_light/state
+    * to: /bob/baxter_emulator (http://localhost:34795/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /bob/digital_io/right_inner_light/state
+    * to: /bob/baxter_emulator (http://localhost:34795/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /bob/digital_io/right_outer_light/state
+    * to: /bob/baxter_emulator (http://localhost:34795/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /bob/digital_io/torso_left_inner_light/state
+    * to: /bob/baxter_emulator (http://localhost:34795/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /bob/digital_io/torso_left_outer_light/state
+    * to: /bob/baxter_emulator (http://localhost:34795/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /bob/digital_io/torso_right_inner_light/state
+    * to: /bob/baxter_emulator (http://localhost:34795/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /bob/digital_io/torso_right_outer_light/state
+    * to: /bob/baxter_emulator (http://localhost:34795/)
+    * direction: inbound
+    * transport: TCPROS
+

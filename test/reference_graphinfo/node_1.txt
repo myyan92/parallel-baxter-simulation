@@ -1,0 +1,38 @@
+--------------------------------------------------------------------------------
+Node [/base_to_world]
+Publications: 
+ * /tf_static [tf2_msgs/TFMessage]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /base_to_world/get_loggers
+ * /base_to_world/set_logger_level
+
+
+contacting node http://localhost:45359/ ...
+Pid: 2371
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /baxter_sim_kinematics_right
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /baxter_sim_kinematics_left
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /baxter_emulator
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo (http://localhost:42526/)
+    * direction: inbound
+    * transport: TCPROS
+

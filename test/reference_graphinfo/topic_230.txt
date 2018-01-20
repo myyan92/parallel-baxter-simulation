@@ -1,0 +1,10 @@
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /baxter_emulator (http://localhost:36631/)
+
+Subscribers: 
+ * /gazebo (http://localhost:42526/)
+ * /gazebo_client (http://localhost:39308/)
+
+

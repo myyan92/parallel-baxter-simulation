@@ -1,0 +1,8 @@
+Type: sensor_msgs/Range
+
+Publishers: 
+ * /bob/baxter_emulator (http://localhost:34795/)
+
+Subscribers: None
+
+

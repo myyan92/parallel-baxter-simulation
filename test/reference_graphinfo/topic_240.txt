@@ -1,0 +1,19 @@
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /base_to_world (http://localhost:45359/)
+ * /baxter_sim_kinematics_left (http://localhost:41333/)
+ * /baxter_sim_kinematics_right (http://localhost:44925/)
+ * /baxter_emulator (http://localhost:36631/)
+ * /robot_state_publisher (http://localhost:46163/)
+ * /gazebo (http://localhost:42526/)
+ * /robot/controller_spawner_stopped (http://localhost:44903/)
+ * /robot/controller_spawner (http://localhost:34325/)
+ * /robot/right_gripper_controller_spawner_stopped (http://localhost:42224/)
+ * /robot/left_gripper_controller_spawner_stopped (http://localhost:34444/)
+ * /gazebo_client (http://localhost:39308/)
+
+Subscribers: 
+ * /rosout (http://localhost:45771/)
+
+

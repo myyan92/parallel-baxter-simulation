@@ -1,0 +1,11 @@
+Type: baxter_core_msgs/AssemblyState
+
+Publishers: 
+ * /alice/baxter_emulator (http://localhost:45389/)
+
+Subscribers: 
+ * /alice/baxter_sim_kinematics_left (http://localhost:38079/)
+ * /alice/baxter_sim_kinematics_right (http://localhost:37984/)
+ * /gazebo (http://localhost:46244/)
+
+

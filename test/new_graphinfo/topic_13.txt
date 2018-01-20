@@ -1,0 +1,8 @@
+Type: baxter_core_msgs/DigitalIOState
+
+Publishers: 
+ * /alice/baxter_sim_io (http://localhost:39463/)
+
+Subscribers: None
+
+

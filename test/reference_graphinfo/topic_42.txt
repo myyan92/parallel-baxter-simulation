@@ -1,0 +1,8 @@
+Type: gazebo_msgs/ModelStates
+
+Publishers: 
+ * /gazebo (http://localhost:42526/)
+
+Subscribers: None
+
+

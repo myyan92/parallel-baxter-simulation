@@ -1,0 +1,15 @@
+Type: tf2_msgs/TFMessage
+
+Publishers: 
+ * /alice/robot_state_publisher (http://localhost:39795/)
+ * /bob/robot_state_publisher (http://localhost:34886/)
+
+Subscribers: 
+ * /alice/baxter_sim_kinematics_left (http://localhost:38079/)
+ * /alice/baxter_sim_kinematics_right (http://localhost:37984/)
+ * /bob/baxter_sim_kinematics_left (http://localhost:44040/)
+ * /bob/baxter_sim_kinematics_right (http://localhost:44119/)
+ * /alice/baxter_emulator (http://localhost:45389/)
+ * /bob/baxter_emulator (http://localhost:34795/)
+
+

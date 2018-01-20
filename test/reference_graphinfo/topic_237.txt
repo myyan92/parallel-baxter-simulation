@@ -1,0 +1,8 @@
+Type: theora_image_transport/Packet
+
+Publishers: 
+ * /baxter_emulator (http://localhost:36631/)
+
+Subscribers: None
+
+

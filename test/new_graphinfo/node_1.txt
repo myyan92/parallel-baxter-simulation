@@ -1,0 +1,151 @@
+--------------------------------------------------------------------------------
+Node [/alice/baxter_emulator]
+Publications: 
+ * /alice/digital_io/torso_left_outer_light/state [baxter_core_msgs/DigitalIOState]
+ * /alice/xdisplay/compressedDepth [sensor_msgs/CompressedImage]
+ * /alice/end_effector/right_gripper/properties [baxter_core_msgs/EndEffectorProperties]
+ * /alice/analog_io/right_hand_range/value_uint32 [std_msgs/UInt32]
+ * /alice/digital_io/torso_right_outer_light/state [baxter_core_msgs/DigitalIOState]
+ * /alice/sim/started [std_msgs/Empty]
+ * /alice/state [baxter_core_msgs/AssemblyState]
+ * /alice/range/left_hand_range/state [sensor_msgs/Range]
+ * /alice/limb/left/gravity_compensation_torques [baxter_core_msgs/SEAJointState]
+ * /alice/digital_io/torso_left_inner_light/state [baxter_core_msgs/DigitalIOState]
+ * /alice/range/right_hand_range/state [sensor_msgs/Range]
+ * /alice/analog_io/left_hand_range/value_uint32 [std_msgs/UInt32]
+ * /alice/xdisplay/compressedDepth/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/digital_io/right_outer_light/state [baxter_core_msgs/DigitalIOState]
+ * /alice/xdisplay/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /rosout [rosgraph_msgs/Log]
+ * /alice/limb/right/gravity_compensation_torques [baxter_core_msgs/SEAJointState]
+ * /alice/xdisplay/compressed [sensor_msgs/CompressedImage]
+ * /alice/digital_io/right_inner_light/state [baxter_core_msgs/DigitalIOState]
+ * /alice/digital_io/left_inner_light/state [baxter_core_msgs/DigitalIOState]
+ * /alice/digital_io/left_outer_light/state [baxter_core_msgs/DigitalIOState]
+ * /alice/xdisplay/theora [theora_image_transport/Packet]
+ * /alice/xdisplay/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /alice/xdisplay [sensor_msgs/Image]
+ * /alice/end_effector/left_gripper/state [baxter_core_msgs/EndEffectorState]
+ * /alice/analog_io/right_hand_range/state [baxter_core_msgs/AnalogIOState]
+ * /alice/end_effector/left_gripper/properties [baxter_core_msgs/EndEffectorProperties]
+ * /alice/digital_io/torso_right_inner_light/state [baxter_core_msgs/DigitalIOState]
+ * /alice/xdisplay/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/xdisplay/compressedDepth/parameter_updates [dynamic_reconfigure/Config]
+ * /alice/analog_io/left_hand_range/state [baxter_core_msgs/AnalogIOState]
+ * /alice/head/head_state [baxter_core_msgs/HeadState]
+ * /alice/end_effector/right_gripper/state [baxter_core_msgs/EndEffectorState]
+ * /alice/xdisplay/compressed/parameter_updates [dynamic_reconfigure/Config]
+
+Subscriptions: 
+ * /alice/sim/laserscan/left_hand_range/state [sensor_msgs/LaserScan]
+ * /alice/set_super_stop [unknown type]
+ * /alice/digital_io/command [unknown type]
+ * /alice/set_super_reset [unknown type]
+ * /alice/sim/laserscan/right_hand_range/state [sensor_msgs/LaserScan]
+ * /tf [tf2_msgs/TFMessage]
+ * /tf_static [tf2_msgs/TFMessage]
+ * /alice/joint_states [sensor_msgs/JointState]
+ * /alice/set_super_enable [unknown type]
+ * /alice/head/command_head_nod [unknown type]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /alice/baxter_emulator/get_loggers
+ * /alice/xdisplay/theora/set_parameters
+ * /alice/xdisplay/compressed/set_parameters
+ * /alice/xdisplay/compressedDepth/set_parameters
+ * /alice/baxter_emulator/set_logger_level
+
+
+contacting node http://localhost:45389/ ...
+Pid: 7539
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/state
+    * to: /alice/baxter_sim_kinematics_left
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/state
+    * to: /alice/baxter_sim_kinematics_right
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/state
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/digital_io/left_inner_light/state
+    * to: /alice/baxter_sim_io
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/digital_io/left_outer_light/state
+    * to: /alice/baxter_sim_io
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/digital_io/torso_left_inner_light/state
+    * to: /alice/baxter_sim_io
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/digital_io/torso_left_outer_light/state
+    * to: /alice/baxter_sim_io
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/digital_io/right_inner_light/state
+    * to: /alice/baxter_sim_io
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/digital_io/right_outer_light/state
+    * to: /alice/baxter_sim_io
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/digital_io/torso_right_inner_light/state
+    * to: /alice/baxter_sim_io
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/digital_io/torso_right_outer_light/state
+    * to: /alice/baxter_sim_io
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/xdisplay
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /alice/xdisplay
+    * to: /gazebo_client
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /alice/joint_states
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /alice/sim/laserscan/left_hand_range/state
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /alice/sim/laserscan/right_hand_range/state
+    * to: /gazebo (http://localhost:46244/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /bob/robot_state_publisher (http://localhost:34886/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /alice/robot_state_publisher (http://localhost:39795/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /bob/robot_state_publisher (http://localhost:34886/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /alice/robot_state_publisher (http://localhost:39795/)
+    * direction: inbound
+    * transport: TCPROS
+

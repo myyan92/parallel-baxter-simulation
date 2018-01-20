@@ -1,0 +1,8 @@
+Type: baxter_core_msgs/EndEffectorState
+
+Publishers: 
+ * /baxter_emulator (http://localhost:36631/)
+
+Subscribers: None
+
+

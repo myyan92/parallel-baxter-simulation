@@ -1,0 +1,12 @@
+Type: sensor_msgs/JointState
+
+Publishers: 
+ * /gazebo (http://localhost:42526/)
+
+Subscribers: 
+ * /baxter_sim_kinematics_left (http://localhost:41333/)
+ * /baxter_sim_kinematics_right (http://localhost:44925/)
+ * /baxter_emulator (http://localhost:36631/)
+ * /robot_state_publisher (http://localhost:46163/)
+
+
