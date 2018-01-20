@@ -124,15 +124,17 @@ RUN source /opt/ros/kinetic/setup.bash && \
     catkin_make install
 
 # install baxter simulator
-RUN cd /home/ros_ws/src && \
-    wstool merge -y https://raw.githubusercontent.com/RethinkRobotics/baxter_simulator/kinetic-devel/baxter_simulator.rosinstall && \
-    wstool update
+# RUN cd /home/ros_ws/src && \
+#     wstool merge -y https://raw.githubusercontent.com/RethinkRobotics/baxter_simulator/kinetic-devel/baxter_simulator.rosinstall && \
+#     wstool update
+COPY ros_ws/src /home/ros_ws/src
 
 # build and install 
 SHELL ["/bin/bash", "-c"]
 RUN source /opt/ros/kinetic/setup.bash && \
     source /home/gazebo-ros/devel/setup.bash && \
     cd /home/ros_ws && \
+    catkin_make clean && \
     catkin_make && \
     catkin_make install && \
     cp src/baxter/baxter.sh .
@@ -162,12 +164,9 @@ ENV PYTHONPATH /home/baselines:${PYTHONPATH}
 # ------------------------------------------
 # copy codes
 # ------------------------------------------
-COPY gym/envs/__init__.py /home/gym/gym/envs/__init__.py
-COPY gym/envs/baxter /home/gym/gym/envs/baxter
 COPY baxter_bridge /home/baxter_bridge
-COPY baxter_sim_connect4 /home/ros_ws/src/baxter_simulator/baxter_sim_connect4
-COPY run_baxter.py /home/baselines/baselines/pposgd/run_baxter.py
-COPY ros_ws /home/ros_ws
+COPY test /home/test
+COPY ros_ws/baxter.sh /home/ros_ws/baxter.sh
 ENV PYTHONPATH /home/baxter_bridge:${PYTHONPATH}
 # do not use gpu
 ENV CUDA_VISIBLE_DEVICES=4 

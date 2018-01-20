@@ -1,4 +1,9 @@
 from subprocess import call
+import os, shutil
+
+if os.path.isdir('new_graphinfo'):
+    shutil.rmtree('new_graphinfo')
+os.mkdir('new_graphinfo')
 
 f = open('new_graphinfo/topics.txt','w')
 call(['rostopic', 'list'], stdout=f)
