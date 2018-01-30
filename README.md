@@ -16,7 +16,7 @@ docker run -it --rm parallel-baxter
 ```
 if you want to use vision in Gazebo, change the last line to 
 ```
-nvidia-docker run -it --rm -e="DISPLAY" -v="/tmp/.X11-unix:/tmp/.X11-unix:rw" parallel-baxter
+nvidia-docker run -it --rm -e="DISPLAY" -e="QT_X11_NO_MITSHM=1" -v="/tmp/.X11-unix:/tmp/.X11-unix:rw" parallel-baxter
 ```
 and in another terminal on your host machine, type
 ```
